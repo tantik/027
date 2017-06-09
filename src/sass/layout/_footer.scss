@@ -1,0 +1,190 @@
+/* footer */
+#footer {
+	background: $gray;
+	color: $white;
+	padding-top: 45px;
+	.holder.top{
+		padding-bottom: 40px;
+		.wide-col{
+			width: 50%;
+			float: left;
+		}
+		.links{
+			overflow: hidden;
+			li{
+				a{
+					font-weight: bold;
+					color: #ddd;
+					margin-bottom: 7px;
+					display: inline-block;
+					vertical-align: top;
+					padding-left: 14px;
+					position: relative;
+					&:after{
+						content: '';
+						position: absolute;
+						top: 50%;
+						left: 0;
+						width: 0;
+						height: 0;
+						margin-top: -4px;
+						border-top: 4px solid transparent;
+						border-left: 5px solid #ddd;
+						border-bottom: 4px solid transparent;
+					}
+					&:hover{
+						text-decoration: underline;
+					}
+					@media only screen and (max-width: 1000px) {
+						font-size: 12px;
+					}
+				}
+				ul{
+					padding: 2px 0 5px 14px;
+					li{
+						padding-right: 10px;
+						display: inline-block;
+						vertical-align: top;
+						margin-right: -3px;
+						width: 49%;
+						@include box-sizing;
+						a{
+							color: #aaa;
+							padding-left: 11px;
+							margin: 0;
+							font-size: 13px;
+							font-weight: normal;
+							&:after{
+								border-left: 5px solid #aaa;
+							}
+							@media only screen and (max-width: 1000px) {
+								font-size: 11px;
+							}
+						}
+					}
+				}
+			}
+		}
+		.col{
+			width: 25%;
+			float: left;
+			.links{
+				li{
+					ul{
+						padding-top: 0;
+						li{
+							display: block;
+							margin: 0;
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+	.bottom-info{
+		background: $black;
+		position: relative;
+		.holder{
+			height: 60px;
+			padding-top: 17px;
+			padding-bottom: 18px;
+			.logo{
+				float: left;
+				margin: 17px 40px 0 0;
+				width: 160px;
+				height: 28px;
+				background: url('../images/logo-footer-pc.png') no-repeat;
+				text-indent: -9999px;
+				overflow: hidden;
+				a{
+					display: block;
+					height: 100%;
+				}
+			}
+			.info{
+				font-size: 13px;
+				line-height: 20px;
+				color: #999;
+				float: left;
+				a{
+					color: #999;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+			.copyright{
+				margin: 20px 0 20px 20px;
+				float: right;
+				font-size: 12px;
+				color: #666;
+				a{
+					color: #666;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+				@media only screen and (max-width: 1400px) {
+					margin-right: 80px;
+				}
+			}
+		}
+	}
+	@media only screen and (max-width: 800px) {
+		padding-top: 0;
+		.holder.top{
+			display: none;
+		}
+		.bottom-info{
+			padding: 20px;
+			text-align: center;
+			.holder{
+				padding: 0;
+				height: auto;
+				overflow: hidden;
+				.logo{
+					margin: 0 auto 10px;
+					display: block;
+					float: none;
+					width: 140px;
+					height: 24px;
+					background: url('../images/logo-footer-sp.png') no-repeat;
+					-webkit-background-size: 140px 24px;
+					background-size: 140px 24px;
+				}
+				.info{
+					display: none;
+				}
+				.copyright{
+					float: none;
+					margin: 0;
+					font-size: 10px;
+					line-height: 1.2;
+				}
+			}
+		}
+	}
+}
+.link-to-top{
+	position: fixed;
+	right: 25px;
+	bottom: 30px;
+	font-size: 10px;
+	line-height: 14px;
+	color: $white;
+	padding-top: 21px;
+	background: url('../images/icon-to-top.png') no-repeat 50% 0;
+	opacity: 0;
+	text-shadow: 1px 1px 0 rgba(0,0,0,0.9);
+	@include fade(opacity);
+	&:hover{
+		color: $white;
+	}
+	&.visible{
+		opacity: 1;
+	}
+	@media only screen and (max-width: 350px) {
+		right: 10px;
+	}
+}

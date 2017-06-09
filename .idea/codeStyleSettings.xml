@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectCodeStyleSettingsManager">
+    <option name="PER_PROJECT_SETTINGS">
+      <value>
+        <option name="LINE_SEPARATOR" value="&#10;" />
+        <option name="RIGHT_MARGIN" value="10" />
+        <option name="HTML_ATTRIBUTE_WRAP" value="0" />
+        <option name="HTML_TEXT_WRAP" value="0" />
+        <option name="HTML_KEEP_BLANK_LINES" value="0" />
+        <CssCodeStyleSettings>
+          <option name="BLANK_LINES_BETWEEN_BLOCKS" value="0" />
+        </CssCodeStyleSettings>
+        <codeStyleSettings language="CSS">
+          <indentOptions>
+            <option name="USE_TAB_CHARACTER" value="true" />
+          </indentOptions>
+        </codeStyleSettings>
+        <codeStyleSettings language="HTML">
+          <indentOptions>
+            <option name="USE_TAB_CHARACTER" value="true" />
+          </indentOptions>
+        </codeStyleSettings>
+        <codeStyleSettings language="JavaScript">
+          <indentOptions>
+            <option name="USE_TAB_CHARACTER" value="true" />
+          </indentOptions>
+        </codeStyleSettings>
+        <codeStyleSettings language="LESS">
+          <indentOptions>
+            <option name="INDENT_SIZE" value="4" />
+            <option name="USE_TAB_CHARACTER" value="true" />
+          </indentOptions>
+        </codeStyleSettings>
+        <codeStyleSettings language="SASS">
+          <indentOptions>
+            <option name="INDENT_SIZE" value="4" />
+          </indentOptions>
+        </codeStyleSettings>
+        <codeStyleSettings language="SCSS">
+          <indentOptions>
+            <option name="INDENT_SIZE" value="4" />
+          </indentOptions>
+        </codeStyleSettings>
+      </value>
+    </option>
+    <option name="PREFERRED_PROJECT_CODE_STYLE" value="Default" />
+  </component>
+</project>
