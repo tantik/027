@@ -8,11 +8,18 @@
 @import "layout/header";
 @import "layout/footer";
 
-
 /* styles */
 #wrapper{
 	position: relative;
 	overflow: hidden;
+}
+#main{
+	&.inner-page{
+		padding-top: 112px;
+		@media only screen and (max-width: 800px) {
+			padding-top: 50px;
+		}
+	}
 }
 /* main gallery */
 .main-gallery{
@@ -741,7 +748,7 @@
 						vertical-align: top;
 						padding: 0 5px 6px;
 						color: #666;
-						border-bottom: 3px solid $white;
+						border-bottom: 3px solid transparent;
 						@include fade(all);
 						&:hover {
 							text-decoration: none !important;
@@ -770,6 +777,7 @@
 							padding: 18px 50px 18px 30px;
 							color: $gray;
 							line-height: 23px;
+							background: $white;
 							overflow: hidden;
 							@include fade(background);
 							.date{
@@ -819,6 +827,12 @@
 			text-align: center;
 		}
 	}
+	&.inner{
+		background: url('../images/bg-whats-new-inner.png') no-repeat;
+		.holder{
+			padding-top: 74px;
+		}
+	}
 	@media only screen and (max-width: 800px) {
 		-webkit-background-size: 177px 102px;
 		background-size: 177px 102px;
@@ -829,7 +843,7 @@
 				margin-bottom: 44px;
 				h2{
 					font-size: 24px;
-					left: 1.2;
+					line-height: 1.2;
 					margin-bottom: 5px;
 				}
 				p{
@@ -862,7 +876,7 @@
 						padding-bottom: 25px;
 						li{
 							a{
-								padding: 12px 20px 12px 0;
+								padding: 12px 25px 12px 0;
 								font-size: 14px;
 								line-height: 18px;
 								.date{
@@ -889,11 +903,133 @@
 				}
 			}
 		}
+		&.inner{
+			background: none;
+			.holder{
+				padding-top: 37px;
+				.tabs-holder{
+					.tabs-nav{
+						padding-bottom: 25px;
+					}
+					.tab{
+						.news-list{
+							padding-bottom: 40px;
+						}
+					}
+				}
+			}
+		}
 	}
 	.tabs-hide {
 		display:none;
 	}
-	.tabs-container {
-		background:#fff;
+}
+.paging{
+	margin-bottom: 20px;
+	text-align: center;
+	overflow: hidden;
+	@include box-flex;
+	justify-content: center;
+	li{
+		padding: 0 5px;
+		a{
+			display: block;
+			width: 46px;
+			border: 1px solid $blue;
+			font-size: 15px;
+			line-height: 46px;
+			height: 46px;
+			text-align: center;
+			background: $white;
+			@include fade(all);
+		}
+		&.current a,
+		& a:hover{
+			color: $white;
+			background: $blue;
+			text-decoration: none !important;
+		}
+		&.prev a,
+		&.next a {
+			text-indent: -9999px;
+			position: relative;
+			&:after{
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 0;
+				height: 0;
+				margin-left: -2px;
+				margin-top: -4px;
+				border-top: 4px solid transparent;
+				border-right: 5px solid $blue;
+				border-bottom: 4px solid transparent;
+				@include fade(all);
+			}
+			&:hover{
+				&:after{
+					border-left-color: $white;
+					border-right-color: $white;
+				}
+			}
+		}
+		&.next a{
+			&:after{
+				border-right: 0;
+				border-left: 5px solid $blue;
+			}
+		}
+	}
+	@media only screen and (max-width: 800px) {
+		margin-bottom: 15px;
+		li{
+			padding: 0 3px;
+			a{
+				font-size: 14px;
+				line-height: 36px;
+				height: 36px;
+				width: 36px;
+			}
+		}
+	}
+}
+/* title image box */
+.title-image{
+	&.news{
+		background: url('../images/img-title-news.jpg') no-repeat 50% 50%;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	color: #fff;
+	overflow: hidden;
+	.holder{
+		@include box-flex;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		height: 300px;
+		.head{
+			h2{
+				margin-bottom: 5px;
+				font: bold 33px/1.2 'Noto Sans', 'HiroKakuPro', Arial, Helvetica, sans-serif;
+				width: 100%;
+			}
+			p{
+				width: 100%;
+				line-height: 1.4;
+			}
+		}
+	}
+	@media only screen and (max-width: 800px) {
+		.holder{
+			height: 150px;
+			.head{
+				h2{
+					font-size: 24px;
+					line-height: 1.2;
+				}
+			}
+		}
 	}
 }

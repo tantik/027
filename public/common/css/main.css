@@ -794,7 +794,7 @@ input, select {
   transition: opacity 0.5s ease; }
   .link-to-top.visible {
     opacity: 1; }
-  @media only screen and (max-width: 350px) {
+  @media only screen and (max-width: 800px) {
     .link-to-top {
       right: 10px; } }
 
@@ -802,6 +802,12 @@ input, select {
 #wrapper {
   position: relative;
   overflow: hidden; }
+
+#main.inner-page {
+  padding-top: 112px; }
+  @media only screen and (max-width: 800px) {
+    #main.inner-page {
+      padding-top: 50px; } }
 
 /* main gallery */
 .main-gallery {
@@ -1421,7 +1427,7 @@ input, select {
             vertical-align: top;
             padding: 0 5px 6px;
             color: #666;
-            border-bottom: 3px solid #fff;
+            border-bottom: 3px solid transparent;
             transition: all 0.5s ease; }
             .whats-new .holder .tabs-holder .fade-tabset li a:hover {
               text-decoration: none !important;
@@ -1445,6 +1451,7 @@ input, select {
               padding: 18px 50px 18px 30px;
               color: #222;
               line-height: 23px;
+              background: #fff;
               overflow: hidden;
               transition: background 0.5s ease; }
               .whats-new .holder .tabs-holder .tab .news-list li a .date {
@@ -1481,6 +1488,10 @@ input, select {
               background: #f5f5f5; }
     .whats-new .holder .btn-holder {
       text-align: center; }
+  .whats-new.inner {
+    background: url("../images/bg-whats-new-inner.png") no-repeat; }
+    .whats-new.inner .holder {
+      padding-top: 74px; }
   @media only screen and (max-width: 800px) {
     .whats-new {
       background-size: 177px 102px; }
@@ -1491,7 +1502,7 @@ input, select {
           margin-bottom: 44px; }
           .whats-new .holder .heading h2 {
             font-size: 24px;
-            left: 1.2;
+            line-height: 1.2;
             margin-bottom: 5px; }
           .whats-new .holder .heading p {
             font-size: 14px;
@@ -1519,7 +1530,7 @@ input, select {
         .whats-new .holder .tabs-holder .tab .news-list {
           padding-bottom: 25px; }
           .whats-new .holder .tabs-holder .tab .news-list li a {
-            padding: 12px 20px 12px 0;
+            padding: 12px 25px 12px 0;
             font-size: 14px;
             line-height: 18px; }
             .whats-new .holder .tabs-holder .tab .news-list li a .date {
@@ -1535,8 +1546,112 @@ input, select {
               clear: both;
               padding-top: 4px; }
             .whats-new .holder .tabs-holder .tab .news-list li a:after {
-              right: 10px; } }
+              right: 10px; }
+      .whats-new.inner {
+        background: none; }
+        .whats-new.inner .holder {
+          padding-top: 37px; }
+          .whats-new.inner .holder .tabs-holder .tabs-nav {
+            padding-bottom: 25px; }
+          .whats-new.inner .holder .tabs-holder .tab .news-list {
+            padding-bottom: 40px; } }
   .whats-new .tabs-hide {
     display: none; }
-  .whats-new .tabs-container {
-    background: #fff; }
+
+.paging {
+  margin-bottom: 20px;
+  text-align: center;
+  overflow: hidden;
+  -display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .paging li {
+    padding: 0 5px; }
+    .paging li a {
+      display: block;
+      width: 46px;
+      border: 1px solid #003a9e;
+      font-size: 15px;
+      line-height: 46px;
+      height: 46px;
+      text-align: center;
+      background: #fff;
+      transition: all 0.5s ease; }
+    .paging li.current a,
+    .paging li a:hover {
+      color: #fff;
+      background: #003a9e;
+      text-decoration: none !important; }
+    .paging li.prev a,
+    .paging li.next a {
+      text-indent: -9999px;
+      position: relative; }
+      .paging li.prev a:after,
+      .paging li.next a:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        margin-left: -2px;
+        margin-top: -4px;
+        border-top: 4px solid transparent;
+        border-right: 5px solid #003a9e;
+        border-bottom: 4px solid transparent;
+        transition: all 0.5s ease; }
+      .paging li.prev a:hover:after,
+      .paging li.next a:hover:after {
+        border-left-color: #fff;
+        border-right-color: #fff; }
+    .paging li.next a:after {
+      border-right: 0;
+      border-left: 5px solid #003a9e; }
+  @media only screen and (max-width: 800px) {
+    .paging {
+      margin-bottom: 15px; }
+      .paging li {
+        padding: 0 3px; }
+        .paging li a {
+          font-size: 14px;
+          line-height: 36px;
+          height: 36px;
+          width: 36px; } }
+
+/* title image box */
+.title-image {
+  color: #fff;
+  overflow: hidden; }
+  .title-image.news {
+    background: url("../images/img-title-news.jpg") no-repeat 50% 50%;
+    background-size: cover; }
+  .title-image .holder {
+    -display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 300px; }
+    .title-image .holder .head h2 {
+      margin-bottom: 5px;
+      font: bold 33px/1.2 'Noto Sans', 'HiroKakuPro', Arial, Helvetica, sans-serif;
+      width: 100%; }
+    .title-image .holder .head p {
+      width: 100%;
+      line-height: 1.4; }
+  @media only screen and (max-width: 800px) {
+    .title-image .holder {
+      height: 150px; }
+      .title-image .holder .head h2 {
+        font-size: 24px;
+        line-height: 1.2; } }
