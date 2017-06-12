@@ -61,14 +61,18 @@
 			line-height: 17px;
 			color: #666;
 			@include fade(color);
-			&:hover{
-				color: $hover-color;
-			}
 			span{
 				display: inline-block;
 				vertical-align: top;
 				padding-left: 24px;
 				background: url('../images/icon-language.png') no-repeat;
+				@include fade(background);
+			}
+			&:hover{
+				color: $hover-color;
+				span{
+					background: url('../images/icon-language-over.png') no-repeat;
+				}
 			}
 		}
 		.nav-holder{
@@ -98,14 +102,27 @@
 							@include fade(color);
 							&:hover{
 								color: $hover-color;
+								span{
+									padding-bottom: 0;
+									border-bottom: 2px solid $hover-color;
+								}
 							}
 							@media only screen and (max-width: 1000px) {
 								font-size: 12px;
 							}
-
+							> span{
+								display: inline-block;
+								vertical-align: top;
+								padding: 2px 0;
+								line-height: 26px;
+							}
 						}
 						&.active a{
-							color: $hover-color;;
+							color: $hover-color;
+							span{
+								padding-bottom: 0;
+								border-bottom: 2px solid $hover-color;
+							}
 						}
 						.drop{
 							position: absolute;
@@ -213,6 +230,13 @@
 						&:hover .drop{
 							left: 0;
 							opacity: 1;
+						}
+						&:hover a{
+							color: $hover-color;
+							span{
+								padding-bottom: 0;
+								border-bottom: 2px solid $hover-color;
+							}
 						}
 					}
 				}
@@ -331,6 +355,12 @@
 									color: $white;
 									opacity: 0.7;
 								}
+								span{
+									display: inline;
+									padding: 0 !important;
+									border-bottom-width: 0 !important;
+									line-height: 19px !important;
+								}
 							}
 							&.hasdrop{
 								position: relative;
@@ -422,7 +452,7 @@
 														margin-bottom: 10px;
 													}
 													span{
-														font-size: 11px;
+														font-size: 14px;
 														line-height: 1.1;
 													}
 												}
@@ -459,7 +489,7 @@
 						a{
 							display: block;
 							font-size: 15px;
-							line-height: 20px;
+							line-height: 19px;
 							color: $white;
 							padding: 20px 45px 20px 20px;
 							position: relative;
@@ -492,9 +522,9 @@
 					line-height: 14px;
 					span{
 						padding-left: 19px;
-						background: url('../images/icon-language-sp.png') no-repeat;
-						-webkit-background-size: 14px 14px;
-						background-size: 14px 14px;
+						background: url('../images/icon-language-sp.png') no-repeat !important;
+						-webkit-background-size: 14px 14px !important;
+						background-size: 14px 14px !important;
 					}
 				}
 			}
@@ -601,7 +631,7 @@
 				margin-right: 15px;
 			}
 			.txt{
-				font-size: 12px;
+				font-size: 14px;
 				line-height: 18px;
 			}
 		}

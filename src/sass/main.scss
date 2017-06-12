@@ -8,6 +8,7 @@
 @import "layout/header";
 @import "layout/footer";
 
+
 /* styles */
 #wrapper{
 	position: relative;
@@ -44,7 +45,7 @@
 			width: 80%;
 			color: $white;
 			h2{
-				font: bold 75px/96px 'NotoSans', 'Hiragino Kakogo W3', Arial, Helvetica, sans-serif;
+				font: bold 75px/96px 'Noto Sans', 'HiroKakuPro', Arial, Helvetica, sans-serif;
 				margin-bottom: 12px;
 			}
 			p{
@@ -77,7 +78,7 @@
 					margin-bottom: 12px;
 				}
 				p{
-					font-size: 12px;
+					font-size: 14px;
 					line-height: 18px;
 					width: 80%;
 					margin: 0 auto;
@@ -91,7 +92,7 @@
 		position: absolute;
 		left: 0;
 		bottom: 0;
-		width: 31.625%;
+		width: 506px;
 		z-index: 4;
 		img{
 			display: block;
@@ -101,7 +102,7 @@
 	@media only screen and (max-width: 800px) {
 		overflow: visible;
 		.corners{
-			bottom: -20px;
+			bottom: 0;
 			left:50%;
 			margin-left: -80px;
 			width: 159px;
@@ -118,6 +119,8 @@
 	}
 	.heading{
 		position: relative;
+		height: 146px;
+		background: url('../images/bg-head-design-block-pc.png') no-repeat;
 		.holder{
 			position: absolute;
 			left: 50%;
@@ -131,7 +134,7 @@
 			@include box-sizing;
 			h2{
 				margin-bottom: 1px;
-				font: bold 33px/1.2 'NotoSans', 'Hiragino Kakogo W3', Arial, Helvetica, sans-serif;
+				font: bold 33px/1.2 'Noto Sans', 'HiroKakuPro', Arial, Helvetica, sans-serif;
 				color: $black;
 			}
 			p{
@@ -141,25 +144,35 @@
 	}
 	.content{
 		position: relative;
-		.holder{
+		&:before{
+			content: '';
 			position: absolute;
-			left: 50%;
-			top: 50%;
-			width: 100%;
-			max-width: 1200px;
-			-webkit-transform: translate(-50%,-50%);
-			transform: translate(-50%,-50%);
+			top: 0;
+			right: 0;
+			width: 50%;
+			height: 445px;
+			background: #20242d;
+			z-index: 1;
+		}
+		.frame{
+			position: relative;
 			z-index: 3;
+			height: 445px;
+			background: url('../images/bg-design-block-pc.jpg') no-repeat;
+		}
+		.holder{
+			max-width: 1200px;
 			@include box-sizing;
+			padding-top: 37px;
 			.text{
-				width: 50%;
+				width: 660px;
 				h3{
 					margin-bottom: 11px;
 					font-size: 42px;
 					line-height: 64px;
 					font-weight: normal;
 					color: $black;
-					letter-spacing: -5px;
+					letter-spacing: -2px;
 					span{
 						display: inline-block;
 						vertical-align: top;
@@ -170,7 +183,7 @@
 					}
 				}
 				p{
-					width: 54%;
+					width: 49%;
 					margin-bottom: 25px;
 					span{
 						background: rgba(255,255,255,0.7);
@@ -187,32 +200,12 @@
 			}
 		}
 	}
-	@media only screen and (max-width: 1400px) {
-		.content{
-			.holder{
-				.text{
-					h3{
-						font-size: 32px;
-						line-height: 52px;
-						margin-bottom: 8px;
-						span{
-							line-height: 50px;
-							margin-bottom: 2px;
-						}
-					}
-					p{
-						margin-bottom: 15px;
-						line-height: 1.4;
-					}
-				}
-				.buttons-holder{
-					margin-bottom: 0;
-				}
-			}
-		}
-	}
 	@media only screen and (max-width: 800px) {
 		.heading{
+			height: auto;
+			background: url('../images/bg-head-design-block-sp.png') no-repeat 50% 0;
+			-webkit-background-size: 130px 21px;
+			background-size: 130px 21px;
 			.holder{
 				position: relative;
 				left: 0;
@@ -227,7 +220,7 @@
 					margin-bottom: 6px;
 				}
 				p{
-					font-size: 12px;
+					font-size: 14px;
 					line-height: 1.2;
 					font-weight: 500;
 				}
@@ -235,6 +228,13 @@
 		}
 		.content{
 			margin-bottom: 15px;
+			&:before{
+				display: none;
+			}
+			.frame{
+				height: auto;
+				background: none;
+			}
 			.holder{
 				position: relative;
 				left: 0;
@@ -242,6 +242,7 @@
 				-webkit-transform: translate(0,0);
 				transform: translate(0,0);
 				margin-top: -85px;
+				padding-top: 0;
 				.text{
 					width: 100%;
 					h3{
@@ -255,7 +256,7 @@
 						}
 					}
 					p{
-						font-size: 12px;
+						font-size: 14px;
 						line-height: 2;
 						width: 100%;
 						margin-bottom: 18px;
@@ -280,6 +281,8 @@
 	}
 	.heading{
 		position: relative;
+		height: 146px;
+		background: url('../images/bg-head-project-block-pc.png') no-repeat;
 		.holder{
 			position: absolute;
 			left: 50%;
@@ -293,7 +296,7 @@
 			@include box-sizing;
 			h2{
 				margin-bottom: 1px;
-				font: bold 33px/1.2 'NotoSans', 'Hiragino Kakogo W3', Arial, Helvetica, sans-serif;
+				font: bold 33px/1.2 'Noto Sans', 'HiroKakuPro', Arial, Helvetica, sans-serif;
 				color: $black;
 			}
 			p{
@@ -303,15 +306,13 @@
 	}
 	.content{
 		position: relative;
+		.frame{
+			height: 445px;
+			background: url('../images/bg-project-block-pc.jpg') no-repeat;
+		}
 		.holder{
-			position: absolute;
-			left: 50%;
-			top: 50%;
-			width: 100%;
+			padding-top: 17px;
 			max-width: 1200px;
-			-webkit-transform: translate(-50%,-50%);
-			transform: translate(-50%,-50%);
-			z-index: 3;
 			@include box-sizing;
 			.text{
 				margin-left: 65.5%;
@@ -321,7 +322,7 @@
 					line-height: 64px;
 					font-weight: normal;
 					color: $black;
-					letter-spacing: -5px;
+					letter-spacing: -2px;
 					span{
 						display: inline-block;
 						vertical-align: top;
@@ -349,33 +350,11 @@
 			}
 		}
 	}
-	@media only screen and (max-width: 1400px) {
-		.content{
-			.holder{
-				.text{
-					h3{
-						font-size: 32px;
-						line-height: 52px;
-						margin-bottom: 8px;
-						span{
-							line-height: 50px;
-							margin-bottom: 2px;
-						}
-					}
-					p{
-						margin-bottom: 15px;
-						line-height: 1.4;
-					}
-				}
-				.buttons-holder{
-					margin-bottom: 0;
-				}
-			}
-		}
-	}
 	@media only screen and (max-width: 800px) {
 		margin-bottom: 30px;
 		.heading{
+			height: auto;
+			background: none;
 			.holder{
 				position: relative;
 				left: 0;
@@ -390,7 +369,7 @@
 					margin-bottom: 6px;
 				}
 				p{
-					font-size: 12px;
+					font-size: 14px;
 					line-height: 1.2;
 					font-weight: 500;
 				}
@@ -400,10 +379,15 @@
 			.bg{
 				margin-bottom: 18px;
 			}
+			.frame{
+				height: auto;
+				background: none;
+			}
 			.holder{
 				position: relative;
 				left: 0;
 				top: 0;
+				padding-top: 0;
 				-webkit-transform: translate(0,0);
 				transform: translate(0,0);
 				.text{
@@ -419,12 +403,13 @@
 						}
 					}
 					p{
-						font-size: 12px;
+						font-size: 14px;
 						line-height: 2;
 						width: 100%;
 						margin-bottom: 18px;
 					}
 					.buttons-holder{
+						margin-bottom: 0;
 						.btn{
 							margin: 0 auto 10px;
 						}
@@ -498,9 +483,7 @@
 	-webkit-background-size: cover;
 	background-size: cover;
 	.block{
-		background: url('../images/bg-corners-product.png') no-repeat 100% 0;
-		-webkit-background-size: 36.25% auto;
-		background-size: 36.25% auto;
+		background: url('../images/bg-corners-product.png') no-repeat 1021px 0;
 		.holder{
 			padding-top: 81px;
 			padding-bottom: 50px;
@@ -510,7 +493,7 @@
 				margin-bottom: 38px;
 				h2{
 					text-align: center;
-					font: bold 33px/1.2 'NotoSans', 'Hiragino Kakogo W3', Arial, Helvetica, sans-serif;
+					font: bold 33px/1.2 'Noto Sans', 'HiroKakuPro', Arial, Helvetica, sans-serif;
 				}
 			}
 			.product-list{
@@ -521,7 +504,7 @@
 					li{
 						display: inline-block;
 						vertical-align: top;
-						margin: 0 -3px 10px 0;
+						margin: 0 0 10px 0;
 						width: 20.166%;
 						padding: 0 5px;
 						@include box-sizing;
@@ -604,16 +587,17 @@
 						margin-bottom: 5px;
 					}
 					p{
-						font-size: 12px;
+						font-size: 14px;
 						line-height: 1.2;
 						font-weight: 500;
 					}
 				}
 				.product-list{
 					margin-bottom: 15px;
+					overflow: visible;
 					.list{
-						margin-left: -3px;
-						margin-right: -3px;
+						margin-left: -10px;
+						margin-right: -10px;
 						@include box-flex;
 						flex-wrap: wrap;
 						justify-content: center;
@@ -624,55 +608,30 @@
 							a{
 								padding: 10px 10px 25px;
 								span{
-									bottom: 8px;
-									font-size: 12px;
+									bottom: 5px;
+									font-size: 14px;
 									line-height: 14px;
 									em{
 										font-style: normal;
 										display: block;
 									}
 								}
+								img{
+									width: 100%;
+								}
 							}
 						}
 						&.top{
-							margin-left: -3px;
-							margin-right: -3px;
+							margin-left: -10px;
+							margin-right: -10px;
 							li{
 								width: 50%;
 								a{
 									padding: 15px 15px 35px;
 									span{
-										bottom: 9px;
-										font-size: 12px;
+										bottom: 5px;
+										font-size: 14px;
 										line-height: 14px;
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-	@media only screen and (max-width: 370px) {
-		.block{
-			.holder{
-				.product-list{
-					.list{
-						li{
-							a{
-								span{
-									bottom: 5px;
-									font-size: 10px;
-								}
-							}
-						}
-						&.top{
-							li {
-								a {
-									span {
-										bottom: 8px;
-										font-size: 11px;
 									}
 								}
 							}
@@ -685,7 +644,25 @@
 }
 /* recruit block */
 .recruit-block{
-	position: relative;
+	overflow: hidden;
+	.hold{
+		display: block;
+		position: relative;
+		height: 445px;
+		background: url('../images/bg-recruit-block.jpg') no-repeat 50% 50%;
+		-webkit-background-size: cover;
+		background-size: cover;
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+			background: url('../images/bg-dots-recruit-block.png');
+		}
+	}
 	.bg{
 		display: block;
 		width: 100%;
@@ -702,20 +679,14 @@
 		text-align: center;
 		z-index: 2;
 		h2{
-			font: bold 36px/1.2 'NotoSans', 'Hiragino Kakogo W3', Arial, Helvetica, sans-serif;
+			font: bold 36px/1.2 'Noto Sans', 'HiroKakuPro', Arial, Helvetica, sans-serif;
 		}
 	}
-	&:after{
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 1;
-		background: url('../images/bg-dots-recruit-block.png');
-	}
 	@media only screen and (max-width: 800px) {
+		.hold{
+			height: auto;
+			background: none;
+		}
 		.heading{
 			h2{
 				font-size: 24px;
@@ -723,7 +694,7 @@
 				margin-bottom: 5px;
 			}
 			p{
-				font-size: 12px;
+				font-size: 14px;
 				line-height: 1.2;
 				font-weight: 500;
 			}
@@ -733,8 +704,6 @@
 /* whats new block */
 .whats-new{
 	background: url('../images/bg-whats-new.png') no-repeat;
-	-webkit-background-size: 15.875% auto;
-	background-size: 15.875% auto;
 	.holder{
 		padding-top: 41px;
 		padding-bottom: 100px;
@@ -743,7 +712,7 @@
 			text-align: center;
 			margin-bottom: 50px;
 			h2{
-				font: bold 33px/1.2 'NotoSans', 'Hiragino Kakogo W3', Arial, Helvetica, sans-serif;
+				font: bold 33px/1.2 'Noto Sans', 'HiroKakuPro', Arial, Helvetica, sans-serif;
 				color: $black;
 			}
 			p{
@@ -774,12 +743,16 @@
 						color: #666;
 						border-bottom: 3px solid $white;
 						@include fade(all);
-						&.active,
 						&:hover {
 							text-decoration: none !important;
 							color: $hover-color;
 							border-bottom: 3px solid $hover-color;
 						}
+					}
+					&.tabs-selected a{
+						text-decoration: none !important;
+						color: $hover-color;
+						border-bottom: 3px solid $hover-color;
 					}
 				}
 			}
@@ -860,7 +833,7 @@
 					margin-bottom: 5px;
 				}
 				p{
-					font-size: 12px;
+					font-size: 14px;
 					line-height: 1.2;
 				}
 			}
@@ -869,12 +842,18 @@
 					padding-bottom: 15px;
 					@include box-flex;
 					justify-content: space-between;
+					overflow-x: auto;
+					white-space: nowrap;
 					li{
-						font-size: 12px;
+						font-size: 14px;
 						line-height: 1.2;
-						margin: 0;
+						margin: 0 15px 0 0;
+						white-space: nowrap;
 						a{
 							padding: 0 1px 6px;
+						}
+						&:last-child{
+							margin-right: 0;
 						}
 					}
 				}
@@ -884,16 +863,18 @@
 						li{
 							a{
 								padding: 12px 20px 12px 0;
-								font-size: 12px;
-								line-height: 16px;
+								font-size: 14px;
+								line-height: 18px;
 								.date{
 									min-width: 78px;
 									margin-right: 5px;
 								}
 								.category{
-									font-size: 9px;
-									line-height: 14px;
-									width: 49px;
+									font-size: 14px;
+									line-height: 16px;
+									width: auto;
+									padding: 0 3px;
+									min-width: 84px;
 								}
 								.text{
 									clear: both;
@@ -904,17 +885,6 @@
 								}
 							}
 						}
-					}
-				}
-			}
-		}
-	}
-	@media only screen and (max-width: 370px) {
-		.holder{
-			.tabs-holder{
-				.fade-tabset{
-					li{
-						font-size: 10px;
 					}
 				}
 			}
