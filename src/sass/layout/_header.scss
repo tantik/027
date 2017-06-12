@@ -338,34 +338,29 @@
 									&:after{
 										display: none;
 									}
-								}
-								a.slide-opener{
-									position: absolute;
-									right: 0;
-									top: 0;
-									width: 50px;
-									height: 60px;
-									padding: 0;
-									&:before{
-										content: '';
-										position: absolute;
-										top: 29px;
-										right: 16px;
-										width: 13px;
-										height: 1px;
-										background: $white;
-									}
-									&:after{
-										display: block;
-										content: '';
-										position: absolute;
-										top: 23px;
-										right: 22px;
-										width: 1px;
-										height: 13px;
-										background: $white;
-										margin-top: 0;
-										border: 0;
+									&.slide-opener{
+										position: relative;
+										&:before{
+											content: '';
+											position: absolute;
+											top: 29px;
+											right: 16px;
+											width: 13px;
+											height: 1px;
+											background: $white;
+										}
+										&:after{
+											display: block;
+											content: '';
+											position: absolute;
+											top: 23px;
+											right: 22px;
+											width: 1px;
+											height: 13px;
+											background: $white;
+											margin-top: 0;
+											border: 0;
+										}
 									}
 								}
 								.drop{

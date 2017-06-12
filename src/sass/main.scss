@@ -53,21 +53,6 @@
 			@media only screen and (max-width: 1400px) {
 				top: 60%;
 			}
-			@media only screen and (max-width: 1200px) {
-				top: 65%;
-				h2{
-					font-size: 70px;
-					line-height: 1.2;
-				}
-			}
-			@media only screen and (max-width: 1000px) {
-				top: 70%;
-				h2{
-					font-size: 50px;
-					line-height: 1.1;
-					margin-bottom: 5px;
-				}
-			}
 			@media only screen and (max-width: 800px) {
 				top: 52%;
 				h2{
@@ -198,6 +183,7 @@
 				.btn{
 					margin-right: 7px;
 				}
+				br{display: none;}
 			}
 		}
 	}
@@ -221,70 +207,6 @@
 				}
 				.buttons-holder{
 					margin-bottom: 0;
-				}
-			}
-		}
-	}
-	@media only screen and (max-width: 1200px) {
-		.heading{
-			.holder{
-				h2{
-					font-size: 28px;
-					margin: 0;
-				}
-				p{
-					line-height: 1.4;
-				}
-			}
-		}
-		.content{
-			.holder{
-				.text{
-					h3{
-						font-size: 28px;
-						line-height: 34px;
-						margin-bottom: 8px;
-						span{
-							line-height: 32px;
-							margin-bottom: 2px;
-						}
-					}
-					p{
-						width: 80%;
-						margin-bottom: 10px;
-					}
-				}
-			}
-		}
-	}
-	@media only screen and (max-width: 1000px) {
-		.heading{
-			.holder{
-				h2{
-					font-size: 22px;
-				}
-				p{
-					line-height: 1.2;
-				}
-			}
-		}
-		.content{
-			.holder{
-				.text{
-					width: 67%;
-					h3{
-						font-size: 22px;
-						line-height: 28px;
-						margin-bottom: 5px;
-						span{
-							line-height: 26px;
-							margin-bottom: 2px;
-						}
-					}
-					p{
-						width: 80%;
-						margin-bottom: 10px;
-					}
 				}
 			}
 		}
@@ -423,6 +345,7 @@
 				.btn{
 					margin-right: 7px;
 				}
+				br{display: none;}
 			}
 		}
 	}
@@ -446,69 +369,6 @@
 				}
 				.buttons-holder{
 					margin-bottom: 0;
-				}
-			}
-		}
-	}
-	@media only screen and (max-width: 1200px) {
-		.heading{
-			.holder{
-				h2{
-					font-size: 28px;
-					margin: 0;
-				}
-				p{
-					line-height: 1.4;
-				}
-			}
-		}
-		.content{
-			.holder{
-				.text{
-					margin-left: 64%;
-					h3{
-						font-size: 28px;
-						line-height: 34px;
-						margin-bottom: 8px;
-						span{
-							line-height: 32px;
-							margin-bottom: 2px;
-						}
-					}
-					p{
-						margin-bottom: 10px;
-					}
-				}
-			}
-		}
-	}
-	@media only screen and (max-width: 1000px) {
-		.heading{
-			.holder{
-				h2{
-					font-size: 22px;
-				}
-				p{
-					line-height: 1.2;
-				}
-			}
-		}
-		.content{
-			.holder{
-				.text{
-					margin-left: 57%;
-					h3{
-						font-size: 22px;
-						line-height: 28px;
-						margin-bottom: 5px;
-						span{
-							line-height: 26px;
-							margin-bottom: 2px;
-						}
-					}
-					p{
-						margin-bottom: 10px;
-					}
 				}
 			}
 		}
@@ -624,10 +484,6 @@
 			}
 		}
 	}
-	@media only screen and (max-width: 1200px) {
-		width: 220px;
-		line-height: 40px;
-	}
 	@media only screen and (max-width: 800px) {
 		display: block;
 		margin: 0 auto;
@@ -674,7 +530,7 @@
 							justify-content: center;
 							align-items: center;
 							position: relative;
-							padding: 40px;
+							padding: 40px 45px;
 							background: rgba(255,255,255,0.85);
 							@include box-sizing;
 							opacity: 1;
@@ -695,7 +551,7 @@
 								width: 100%;
 								font-size: 15px;
 								font-weight: bold;
-								@media only screen and (max-width: 1000px) {
+								@media only screen and (max-width: 800px) {
 									bottom: 5px;
 									font-size: 13px;
 									line-height: 1.2;
@@ -713,10 +569,10 @@
 							padding: 0 5px;
 							width: 25%;
 							a{
-								padding: 20px 20px 48px;
+								padding: 20px 45px 48px;
 								span{
 									bottom: 16px;
-									@media only screen and (max-width: 1000px) {
+									@media only screen and (max-width: 800px) {
 										bottom: 5px;
 										font-size: 13px;
 										line-height: 1.2;
@@ -1063,5 +919,11 @@
 				}
 			}
 		}
+	}
+	.tabs-hide {
+		display:none;
+	}
+	.tabs-container {
+		background:#fff;
 	}
 }

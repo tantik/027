@@ -23,6 +23,12 @@ body{
 	font-size: $base-font-size;
 	line-height: $base-line-height;
 	min-width: $base-min-width;
+	@media only screen and (max-width: 1200px) {
+		min-width: 1200px;
+	}
+	@media only screen and (max-width: 800px) {
+		min-width: $base-min-width;
+	}
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display: block;}
 ul{list-style: none;}
