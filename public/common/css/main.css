@@ -543,6 +543,12 @@ input, select {
           background: url("../images/icon-language-sp.png") no-repeat !important;
           background-size: 14px 14px !important; } }
 
+#wrapper.inner #header {
+  position: relative; }
+  @media only screen and (max-width: 800px) {
+    #wrapper.inner #header {
+      position: fixed; } }
+
 @media only screen and (max-width: 800px) {
   .nav-visible {
     overflow: hidden; }
@@ -803,11 +809,9 @@ input, select {
   position: relative;
   overflow: hidden; }
 
-#main.inner-page {
-  padding-top: 112px; }
-  @media only screen and (max-width: 800px) {
-    #main.inner-page {
-      padding-top: 50px; } }
+@media only screen and (max-width: 800px) {
+  #main.inner-page {
+    padding-top: 50px; } }
 
 /* main gallery */
 .main-gallery {
@@ -1532,7 +1536,6 @@ input, select {
               padding: 18px 50px 18px 30px;
               color: #222;
               line-height: 23px;
-              background: #fff;
               overflow: hidden;
               transition: background 0.5s ease; }
               .whats-new .holder .tabs-holder .tab .news-list li a .date {

@@ -537,6 +537,12 @@
 		}
 	}
 }
+#wrapper.inner #header{
+	position: relative;
+	@media only screen and (max-width: 800px) {
+		position: fixed;
+	}
+}
 @media only screen and (max-width: 800px) {
 	.nav-visible{
 		overflow: hidden;

@@ -15,7 +15,6 @@
 }
 #main{
 	&.inner-page{
-		padding-top: 112px;
 		@media only screen and (max-width: 800px) {
 			padding-top: 50px;
 		}
@@ -874,7 +873,6 @@
 							padding: 18px 50px 18px 30px;
 							color: $gray;
 							line-height: 23px;
-							background: $white;
 							overflow: hidden;
 							@include fade(background);
 							.date{
