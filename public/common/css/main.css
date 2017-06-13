@@ -795,7 +795,8 @@ input, select {
     opacity: 1; }
   @media only screen and (max-width: 800px) {
     .link-to-top {
-      right: 10px; } }
+      right: 10px;
+      bottom: 10px; } }
 
 /* styles */
 #wrapper {
