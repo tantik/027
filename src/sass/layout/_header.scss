@@ -124,9 +124,6 @@
 						}
 						&.active a{
 							color: $hover-color;
-							&:after{
-								opacity: 1;
-							}
 						}
 						.drop{
 							position: absolute;

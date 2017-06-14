@@ -1117,6 +1117,16 @@ input.btn{
 			height: 200px;
 		}
 	}
+	&.project{
+		background: url('../images/img-title-project-pc.jpg') no-repeat 50% 50%;
+		-webkit-background-size: cover;
+		background-size: cover;
+		@media only screen and (max-width: 800px) {
+			background: url('../images/img-title-project-sp.jpg') no-repeat 50% 50%;
+			-webkit-background-size: cover;
+			background-size: cover;
+		}
+	}
 	color: #fff;
 	overflow: hidden;
 	.holder{
@@ -1376,6 +1386,67 @@ input.btn{
 		}
 	}
 }
+/* project blocks */
+.project-blocks{
+	margin-bottom: 40px;
+	overflow: hidden;
+	.holder{
+		padding-top: 6px;
+	}
+	@media only screen and (max-width: 800px) {
+		margin-bottom: 0;
+		.holder{
+			padding-top: 3px;
+		}
+	}
+}
+.project-box{
+	margin-bottom: 80px;
+	overflow: hidden;
+	.image{
+		margin-right: 50px;
+		width: 30.4%;
+		float: left;
+		img{
+			display: block;
+			width: 100%;
+		}
+	}
+	.info-box{
+		overflow: hidden;
+		margin-bottom: 0;
+		padding-top: 3px;
+		p{
+			margin-bottom: 21px;
+		}
+		.btn{
+			line-height: 44px;
+			width: 245px;
+		}
+	}
+	@media only screen and (max-width: 800px) {
+		.image{
+			margin-bottom: 21px;
+			width: 100%;
+			float: none;
+		}
+		.info-box{
+			padding-top: 0;
+			h3{
+				margin-bottom: 12px;
+			}
+			p{
+				margin-bottom: 17px;
+			}
+			.btn{
+				font-size: 14px;
+				line-height: 38px;
+				width: 230px;
+			}
+		}
+	}
+}
+
 
 
 

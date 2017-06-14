@@ -213,8 +213,6 @@ input, select {
                 font-size: 12px; } }
           #header .holder .nav-holder .nav > ul > li.active a {
             color: #003a9e; }
-            #header .holder .nav-holder .nav > ul > li.active a:after {
-              opacity: 1; }
           #header .holder .nav-holder .nav > ul > li .drop {
             position: absolute;
             top: 30px;
@@ -1730,6 +1728,13 @@ input.btn {
     background: #274573; }
     .title-image.contact .holder {
       height: 200px; }
+  .title-image.project {
+    background: url("../images/img-title-project-pc.jpg") no-repeat 50% 50%;
+    background-size: cover; }
+    @media only screen and (max-width: 800px) {
+      .title-image.project {
+        background: url("../images/img-title-project-sp.jpg") no-repeat 50% 50%;
+        background-size: cover; } }
   .title-image .holder {
     -display: -webkit-box;
     display: -ms-flexbox;
@@ -1941,3 +1946,50 @@ input.btn {
         line-height: 28px; }
       .info-box.box2 {
         margin-bottom: 11px; } }
+
+/* project blocks */
+.project-blocks {
+  margin-bottom: 40px;
+  overflow: hidden; }
+  .project-blocks .holder {
+    padding-top: 6px; }
+  @media only screen and (max-width: 800px) {
+    .project-blocks {
+      margin-bottom: 0; }
+      .project-blocks .holder {
+        padding-top: 3px; } }
+
+.project-box {
+  margin-bottom: 80px;
+  overflow: hidden; }
+  .project-box .image {
+    margin-right: 50px;
+    width: 30.4%;
+    float: left; }
+    .project-box .image img {
+      display: block;
+      width: 100%; }
+  .project-box .info-box {
+    overflow: hidden;
+    margin-bottom: 0;
+    padding-top: 3px; }
+    .project-box .info-box p {
+      margin-bottom: 21px; }
+    .project-box .info-box .btn {
+      line-height: 44px;
+      width: 245px; }
+  @media only screen and (max-width: 800px) {
+    .project-box .image {
+      margin-bottom: 21px;
+      width: 100%;
+      float: none; }
+    .project-box .info-box {
+      padding-top: 0; }
+      .project-box .info-box h3 {
+        margin-bottom: 12px; }
+      .project-box .info-box p {
+        margin-bottom: 17px; }
+      .project-box .info-box .btn {
+        font-size: 14px;
+        line-height: 38px;
+        width: 230px; } }
