@@ -789,7 +789,7 @@ input, select {
 .link-to-top {
   position: fixed;
   right: 15px;
-  bottom: 95px;
+  bottom: 15px;
   z-index: 700;
   width: 66px;
   height: 66px;
@@ -1713,6 +1713,8 @@ input, select {
   .title-image.news {
     background: url("../images/img-title-news.jpg") no-repeat 50% 50%;
     background-size: cover; }
+  .title-image.title-image {
+    background: #274573; }
   .title-image .holder {
     -display: -webkit-box;
     display: -ms-flexbox;
@@ -1739,3 +1741,5 @@ input, select {
       .title-image .holder .head h2 {
         font-size: 24px;
         line-height: 1.2; } }
+
+/* contact block */
