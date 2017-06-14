@@ -20,6 +20,12 @@
 		}
 	}
 }
+.inner-content{
+	background: url('../images/bg-whats-new-inner.png') no-repeat !important;
+	@media only screen and (max-width: 800px) {
+		background: none !important;
+	}
+}
 /* main gallery */
 .main-gallery{
 	position: relative;
@@ -923,7 +929,6 @@
 		}
 	}
 	&.inner{
-		background: url('../images/bg-whats-new-inner.png') no-repeat;
 		.holder{
 			padding-top: 74px;
 		}
@@ -999,7 +1004,6 @@
 			}
 		}
 		&.inner{
-			background: none;
 			.holder{
 				padding-top: 37px;
 				.tabs-holder{
@@ -1132,7 +1136,11 @@
 	}
 }
 /* contact block */
+.contact-block{
 
+
+
+}
 
 
 

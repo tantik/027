@@ -813,6 +813,12 @@ input, select {
   #main.inner-page {
     padding-top: 50px; } }
 
+.inner-content {
+  background: url("../images/bg-whats-new-inner.png") no-repeat !important; }
+  @media only screen and (max-width: 800px) {
+    .inner-content {
+      background: none !important; } }
+
 /* main gallery */
 .main-gallery {
   position: relative;
@@ -1572,10 +1578,8 @@ input, select {
               background: #f5f5f5; }
     .whats-new .holder .btn-holder {
       text-align: center; }
-  .whats-new.inner {
-    background: url("../images/bg-whats-new-inner.png") no-repeat; }
-    .whats-new.inner .holder {
-      padding-top: 74px; }
+  .whats-new.inner .holder {
+    padding-top: 74px; }
   @media only screen and (max-width: 800px) {
     .whats-new {
       background-size: 177px 102px; }
@@ -1631,14 +1635,12 @@ input, select {
               padding-top: 4px; }
             .whats-new .holder .tabs-holder .tab .news-list li a:after {
               right: 10px; }
-      .whats-new.inner {
-        background: none; }
-        .whats-new.inner .holder {
-          padding-top: 37px; }
-          .whats-new.inner .holder .tabs-holder .tabs-nav {
-            padding-bottom: 25px; }
-          .whats-new.inner .holder .tabs-holder .tab .news-list {
-            padding-bottom: 40px; } }
+      .whats-new.inner .holder {
+        padding-top: 37px; }
+        .whats-new.inner .holder .tabs-holder .tabs-nav {
+          padding-bottom: 25px; }
+        .whats-new.inner .holder .tabs-holder .tab .news-list {
+          padding-bottom: 40px; } }
   .whats-new .tabs-hide {
     display: none; }
 
