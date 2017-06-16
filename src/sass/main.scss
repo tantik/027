@@ -1224,6 +1224,14 @@ input.btn{
 			background-size: cover;
 		}
 	}
+	&.design{
+		background: url('../images/img-title-design-pc.jpg') no-repeat 50% 50%;
+		@media only screen and (max-width: 800px) {
+			background: url('../images/img-title-design-sp.jpg') no-repeat 50% 50%;
+			-webkit-background-size: cover;
+			background-size: cover;
+		}
+	}
 	color: #fff;
 	overflow: hidden;
 	.holder{
@@ -1701,8 +1709,67 @@ input.btn{
 		}
 	}
 }
-
-
+/* design text block */
+.design-holder{
+	margin-bottom: 48px;
+	overflow: hidden;
+	@media only screen and (max-width: 800px) {
+		margin-bottom: 30px;
+	}
+}
+.design-text{
+	margin-bottom: 75px;
+	h2{
+		margin-bottom: 24px;
+		font-size: 30px;
+		line-height: 1.4;
+		font-weight: normal;
+		color: $blue;
+		text-align: center;
+	}
+	.design-txt-content{
+		overflow: hidden;
+		.left-text{
+			width: 78.5%;
+			float: left;
+			margin-right: 38px;
+			p{
+				margin-bottom: 30px;
+				line-height: 30px;
+			}
+		}
+		.img{
+			overflow: hidden;
+			padding-top: 6px;
+			img{
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+	@media only screen and (max-width: 800px) {
+		margin-bottom: 40px;
+		h2{
+			margin-bottom: 4px;
+			font-size: 20px;
+		}
+		.design-txt-content{
+			.left-text{
+				width: 100%;
+				float: none;
+				margin-right: 0;
+				p{
+					margin-bottom: 30px;
+				}
+			}
+			.img{
+				padding-top: 0;
+				margin: 0 auto;
+				width: 55%;
+			}
+		}
+	}
+}
 
 
 

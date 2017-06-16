@@ -1821,6 +1821,12 @@ input.btn {
       .title-image.project {
         background: url("../images/img-title-project-sp.jpg") no-repeat 50% 50%;
         background-size: cover; } }
+  .title-image.design {
+    background: url("../images/img-title-design-pc.jpg") no-repeat 50% 50%; }
+    @media only screen and (max-width: 800px) {
+      .title-image.design {
+        background: url("../images/img-title-design-sp.jpg") no-repeat 50% 50%;
+        background-size: cover; } }
   .title-image .holder {
     -display: -webkit-box;
     display: -ms-flexbox;
@@ -2204,3 +2210,52 @@ input.btn {
           width: 100%; }
       .sub-info-box .content .right-image .bot-img {
         margin-top: -100px; } }
+
+/* design text block */
+.design-holder {
+  margin-bottom: 48px;
+  overflow: hidden; }
+  @media only screen and (max-width: 800px) {
+    .design-holder {
+      margin-bottom: 30px; } }
+
+.design-text {
+  margin-bottom: 75px; }
+  .design-text h2 {
+    margin-bottom: 24px;
+    font-size: 30px;
+    line-height: 1.4;
+    font-weight: normal;
+    color: #003a9e;
+    text-align: center; }
+  .design-text .design-txt-content {
+    overflow: hidden; }
+    .design-text .design-txt-content .left-text {
+      width: 78.5%;
+      float: left;
+      margin-right: 38px; }
+      .design-text .design-txt-content .left-text p {
+        margin-bottom: 30px;
+        line-height: 30px; }
+    .design-text .design-txt-content .img {
+      overflow: hidden;
+      padding-top: 6px; }
+      .design-text .design-txt-content .img img {
+        display: block;
+        width: 100%; }
+  @media only screen and (max-width: 800px) {
+    .design-text {
+      margin-bottom: 40px; }
+      .design-text h2 {
+        margin-bottom: 4px;
+        font-size: 20px; }
+      .design-text .design-txt-content .left-text {
+        width: 100%;
+        float: none;
+        margin-right: 0; }
+        .design-text .design-txt-content .left-text p {
+          margin-bottom: 30px; }
+      .design-text .design-txt-content .img {
+        padding-top: 0;
+        margin: 0 auto;
+        width: 55%; } }
