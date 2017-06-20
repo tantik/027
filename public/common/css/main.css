@@ -835,7 +835,9 @@ input, select {
   @media only screen and (max-width: 800px) {
     .inner-content {
       padding-top: 37px;
-      background: none !important; } }
+      background: none !important; }
+      .inner-content.catalog-downloads {
+        padding-top: 32px; } }
 
 .center-content .holder {
   max-width: 1000px; }
@@ -1276,6 +1278,16 @@ input, select {
       background: #fff; }
       .btn.white:hover:after {
         border-left: 5px solid #003a9e; }
+  .btn.download:after {
+    width: 9px;
+    height: 11px;
+    margin-top: -5px;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 0;
+    background: url("../images/icon-download.png") no-repeat; }
+  .btn.download:hover:after {
+    background: url("../images/icon-download-over.png") no-repeat; }
   .btn.blue {
     background: #003a9e;
     color: #fff; }
@@ -1901,6 +1913,15 @@ input.btn {
   .contact-block .holder {
     margin-bottom: 75px; } }
 
+.contact-form {
+  margin-bottom: 52px;
+  overflow: hidden; }
+  .contact-form .button-holder {
+    text-align: center; }
+  @media only screen and (max-width: 800px) {
+    .contact-form {
+      margin-bottom: 40px; } }
+
 .form-table {
   margin-bottom: 51px;
   width: 100%;
@@ -1924,6 +1945,8 @@ input.btn {
       border-radius: 2px;
       font-size: 12px;
       line-height: 25px; }
+  .form-table.catalog-form th {
+    width: 30%; }
   .form-table td {
     padding: 11px 30px;
     vertical-align: top;
@@ -1946,6 +1969,9 @@ input.btn {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     max-width: 527px; }
+    .form-table .input-text.short,
+    .form-table textarea.short {
+      width: 210px; }
   .form-table textarea {
     width: 100% !important;
     max-width: 1000px;
@@ -1976,7 +2002,6 @@ input.btn {
     font-size: 14px;
     line-height: 19px;
     color: #222;
-    width: 100%;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     background: url("../images/arrow-select.png") no-repeat 100% 0;
@@ -1991,7 +2016,8 @@ input.btn {
       .form-table tr {
         display: block;
         width: 100%; }
-      .form-table th {
+      .form-table th,
+      .form-table.catalog-form th {
         display: block;
         width: 100%;
         -ms-box-sizing: border-box;
@@ -2010,6 +2036,9 @@ input.btn {
       .form-table textarea {
         padding-top: 7px;
         padding-bottom: 7px; }
+        .form-table .input-text.short,
+        .form-table textarea.short {
+          width: 225px; }
       .form-table textarea {
         height: 200px; }
       .form-table .form-row {
@@ -2046,6 +2075,10 @@ input.btn {
         font-size: 12px;
         line-height: 21px;
         color: #003a9e; }
+  .info-box .form-text {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    overflow: hidden; }
   .info-box h3 {
     margin-bottom: 22px;
     font-size: 26px;
@@ -2082,6 +2115,8 @@ input.btn {
   @media only screen and (max-width: 800px) {
     .info-box {
       margin-bottom: 33px; }
+      .info-box.sp-box1 {
+        margin-bottom: 20px; }
       .info-box .meta-row {
         margin: 0 0 1px; }
         .info-box .meta-row p.date {
@@ -2371,5 +2406,126 @@ h2.title-blue {
 
 /* downloads text */
 .downloads-text {
-  margin-bottom: 50px;
+  margin-bottom: 63px;
   overflow: hidden; }
+  .downloads-text .text {
+    width: 70%;
+    float: left;
+    line-height: 30px;
+    letter-spacing: 1px; }
+  .downloads-text .btn {
+    margin-top: 8px;
+    float: right; }
+  @media only screen and (max-width: 800px) {
+    .downloads-text {
+      margin-bottom: 38px; }
+      .downloads-text .text {
+        font-size: 14px;
+        line-height: 28px;
+        width: 100%;
+        float: none;
+        margin-bottom: 17px;
+        overflow: hidden; }
+      .downloads-text .btn {
+        margin: 0 auto;
+        float: none; } }
+
+/*  downloads list */
+.downloads-list {
+  padding-top: 8px;
+  padding-bottom: 7px;
+  overflow: hidden;
+  -display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .downloads-list li {
+    display: block;
+    width: 23.75%;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; }
+    .downloads-list li .hold {
+      background: #f5f5f5;
+      padding: 43px 20px 20px; }
+      .downloads-list li .hold .image {
+        margin: 0 auto 20px;
+        width: 72.25%;
+        display: block;
+        position: relative; }
+        .downloads-list li .hold .image img {
+          display: block;
+          width: 100%;
+          border: 1px solid #ddd;
+          -ms-box-sizing: border-box;
+          box-sizing: border-box; }
+        .downloads-list li .hold .image .txt {
+          position: absolute;
+          left: 5px;
+          right: 5px;
+          top: 50%;
+          text-align: center;
+          font-size: 16px;
+          line-height: 24px;
+          color: #fff;
+          opacity: 0;
+          z-index: 3;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+          transition: opacity 0.5s ease;
+          letter-spacing: 1px; }
+        .downloads-list li .hold .image:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          opacity: 0;
+          background: rgba(0, 0, 0, 0.7);
+          transition: opacity 0.5s ease; }
+        .downloads-list li .hold .image:hover .txt, .downloads-list li .hold .image:hover:after {
+          opacity: 1; }
+      .downloads-list li .hold .btn {
+        width: 100%;
+        line-height: 44px;
+        letter-spacing: 1px; }
+  @media only screen and (max-width: 800px) {
+    .downloads-list {
+      margin-bottom: 0;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .downloads-list li {
+        width: 50%;
+        margin-bottom: 14px;
+        padding-right: 7px; }
+        .downloads-list li:nth-child(even) {
+          padding: 0 0 0 7px; }
+        .downloads-list li .hold {
+          padding: 20px 10px; }
+          .downloads-list li .hold .image {
+            width: 100%;
+            margin-bottom: 12px; }
+            .downloads-list li .hold .image img {
+              margin: 0 auto 16px;
+              width: 60%; }
+            .downloads-list li .hold .image:after {
+              display: none !important; }
+            .downloads-list li .hold .image .txt {
+              position: relative;
+              left: 0;
+              right: 0;
+              top: 0;
+              -webkit-transform: translateY(0);
+              transform: translateY(0);
+              font-size: 16px;
+              line-height: 1.2;
+              display: block;
+              text-align: center;
+              color: #222;
+              opacity: 1 !important; }
+          .downloads-list li .hold .btn {
+            line-height: 38px; } }
