@@ -271,11 +271,25 @@ input, select {
                   color: #fff;
                   text-align: center;
                   transition: opacity 0.5s ease; }
-                  #header .holder .nav-holder .nav > ul > li .drop.full .hold .box a img {
-                    display: block;
-                    width: 100%;
+                  #header .holder .nav-holder .nav > ul > li .drop.full .hold .box a .image {
+                    -display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: -webkit-box;
+                    display: flex;
+                    padding: 7px;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                    -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                            justify-content: center;
+                    background: #fff;
                     margin-bottom: 14px; }
-                  #header .holder .nav-holder .nav > ul > li .drop.full .hold .box a span {
+                    #header .holder .nav-holder .nav > ul > li .drop.full .hold .box a .image img {
+                      display: block;
+                      max-width: 100%;
+                      max-height: 148px; }
+                  #header .holder .nav-holder .nav > ul > li .drop.full .hold .box a span.txt {
                     display: block; }
                   #header .holder .nav-holder .nav > ul > li .drop.full .hold .box a:hover {
                     opacity: 0.7; }
@@ -487,9 +501,10 @@ input, select {
                       padding: 0 10px 0 5px; }
                     #header .holder .nav-holder .nav ul li.hasdrop .drop.full .hold .box a {
                       padding: 0; }
-                      #header .holder .nav-holder .nav ul li.hasdrop .drop.full .hold .box a img {
+                      #header .holder .nav-holder .nav ul li.hasdrop .drop.full .hold .box a .image {
+                        padding: 10px !important;
                         margin-bottom: 10px; }
-                      #header .holder .nav-holder .nav ul li.hasdrop .drop.full .hold .box a span {
+                      #header .holder .nav-holder .nav ul li.hasdrop .drop.full .hold .box a span.txt {
                         font-size: 14px;
                         line-height: 1.1; }
                   #header .holder .nav-holder .nav ul li.hasdrop .drop.full .hold .links {
@@ -1829,9 +1844,9 @@ input.btn {
   .title-image.news {
     background: url("../images/img-title-news.jpg") no-repeat 50% 50%;
     background-size: cover; }
-  .title-image.contact {
+  .title-image.contact, .title-image.catalogs {
     background: #274573; }
-    .title-image.contact .holder {
+    .title-image.contact .holder, .title-image.catalogs .holder {
       height: 200px; }
   .title-image.project {
     background: url("../images/img-title-project-pc.jpg") no-repeat 50% 50%;
@@ -1872,7 +1887,7 @@ input.btn {
       .title-image .holder .head h2 {
         font-size: 24px;
         line-height: 1.2; }
-    .title-image.contact .holder {
+    .title-image.contact .holder, .title-image.catalogs .holder {
       height: 150px; } }
 
 /* contact block */
@@ -2351,3 +2366,8 @@ input.btn {
         padding-top: 0;
         margin: 0 auto;
         width: 55%; } }
+
+/* downloads text */
+.downloads-text {
+  margin-bottom: 50px;
+  overflow: hidden; }

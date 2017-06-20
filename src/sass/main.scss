@@ -1228,7 +1228,8 @@ input.btn{
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
-	&.contact{
+	&.contact,
+	&.catalogs{
 		background: #274573;
 		.holder{
 			height: 200px;
@@ -1282,7 +1283,8 @@ input.btn{
 				}
 			}
 		}
-		&.contact{
+		&.contact,
+		&.catalogs{
 			.holder{
 				height: 150px;
 			}
@@ -1888,6 +1890,9 @@ input.btn{
 		}
 	}
 }
-
-
+/* downloads text */
+.downloads-text{
+	margin-bottom: 50px;
+	overflow: hidden;
+}
 

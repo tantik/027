@@ -187,12 +187,20 @@
 											color: #fff;
 											text-align: center;
 											@include fade(opacity);
-											img{
-												display: block;
-												width: 100%;
+											.image{
+												@include box-flex;
+												padding: 7px;
+												align-items: center;
+												justify-content: center;
+												background: $white;
 												margin-bottom: 14px;
+												img{
+													display: block;
+													max-width: 100%;
+													max-height: 148px;
+												}
 											}
-											span{
+											span.txt{
 												display: block;
 											}
 											&:hover{
@@ -451,10 +459,11 @@
 												}
 												a{
 													padding: 0;
-													img{
+													.image{
+														padding: 10px !important;
 														margin-bottom: 10px;
 													}
-													span{
+													span.txt{
 														font-size: 14px;
 														line-height: 1.1;
 													}
