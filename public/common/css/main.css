@@ -483,7 +483,7 @@ input, select {
                     width: 50%;
                     -ms-box-sizing: border-box;
                     box-sizing: border-box; }
-                    #header .holder .nav-holder .nav ul li.hasdrop .drop.full .hold .box:last-child {
+                    #header .holder .nav-holder .nav ul li.hasdrop .drop.full .hold .box:nth-child(2) {
                       padding: 0 10px 0 5px; }
                     #header .holder .nav-holder .nav ul li.hasdrop .drop.full .hold .box a {
                       padding: 0; }
@@ -1388,8 +1388,8 @@ input.btn {
       position: absolute;
       top: 0;
       left: 50%;
-      width: 816px;
-      height: 584px;
+      width: 985px;
+      height: 585px;
       background: url("../images/bg-corners-product.png") no-repeat;
       z-index: 1;
       overflow: hidden; }
