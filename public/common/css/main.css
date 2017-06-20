@@ -2326,15 +2326,20 @@ input.btn {
     .design-holder {
       margin-bottom: 30px; } }
 
+h2.title-blue {
+  margin-bottom: 24px;
+  font-size: 30px;
+  line-height: 1.4;
+  font-weight: normal;
+  color: #003a9e;
+  text-align: center; }
+  @media only screen and (max-width: 800px) {
+    h2.title-blue {
+      margin-bottom: 4px;
+      font-size: 20px; } }
+
 .design-text {
   margin-bottom: 75px; }
-  .design-text h2 {
-    margin-bottom: 24px;
-    font-size: 30px;
-    line-height: 1.4;
-    font-weight: normal;
-    color: #003a9e;
-    text-align: center; }
   .design-text .design-txt-content {
     overflow: hidden; }
     .design-text .design-txt-content .left-text {
@@ -2353,9 +2358,6 @@ input.btn {
   @media only screen and (max-width: 800px) {
     .design-text {
       margin-bottom: 40px; }
-      .design-text h2 {
-        margin-bottom: 4px;
-        font-size: 20px; }
       .design-text .design-txt-content .left-text {
         width: 100%;
         float: none;

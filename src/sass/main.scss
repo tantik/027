@@ -1837,16 +1837,20 @@ input.btn{
 		margin-bottom: 30px;
 	}
 }
+h2.title-blue{
+	margin-bottom: 24px;
+	font-size: 30px;
+	line-height: 1.4;
+	font-weight: normal;
+	color: $blue;
+	text-align: center;
+	@media only screen and (max-width: 800px) {
+		margin-bottom: 4px;
+		font-size: 20px;
+	}
+}
 .design-text{
 	margin-bottom: 75px;
-	h2{
-		margin-bottom: 24px;
-		font-size: 30px;
-		line-height: 1.4;
-		font-weight: normal;
-		color: $blue;
-		text-align: center;
-	}
 	.design-txt-content{
 		overflow: hidden;
 		.left-text{
@@ -1869,10 +1873,6 @@ input.btn{
 	}
 	@media only screen and (max-width: 800px) {
 		margin-bottom: 40px;
-		h2{
-			margin-bottom: 4px;
-			font-size: 20px;
-		}
 		.design-txt-content{
 			.left-text{
 				width: 100%;
