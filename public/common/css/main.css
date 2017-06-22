@@ -2188,6 +2188,110 @@ input.btn {
       .info-box .center-images .image img {
         display: block;
         width: 100%; }
+  .info-box .head {
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    overflow: hidden; }
+    .info-box .head h3 {
+      margin: 0;
+      padding: 0;
+      float: left; }
+      .info-box .head h3:before, .info-box .head h3:after {
+        display: none; }
+    .info-box .head:before, .info-box .head:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #ddd; }
+    .info-box .head:after {
+      width: 300px;
+      background: #003a9e; }
+    .info-box .head .patent {
+      float: right;
+      margin-left: 10px;
+      font-size: 14px;
+      line-height: 30px; }
+  .info-box .content {
+    overflow: hidden; }
+    .info-box .content h4 {
+      font-size: 18px;
+      line-height: 30px;
+      color: #003a9e;
+      margin-bottom: 2px; }
+    .info-box .content .left-text {
+      width: 65%;
+      float: left; }
+    .info-box .content .right-image {
+      width: 32.5%;
+      float: right; }
+      .info-box .content .right-image img {
+        display: block;
+        width: 100%; }
+        .info-box .content .right-image img.frame {
+          border: 1px solid #b2b2b2;
+          -ms-box-sizing: border-box;
+          box-sizing: border-box; }
+      .info-box .content .right-image p.zoom {
+        margin: 10px 0 0;
+        text-align: right; }
+        .info-box .content .right-image p.zoom a {
+          display: inline-block;
+          vertical-align: top;
+          padding-left: 24px;
+          font-size: 14px;
+          line-height: 1.2;
+          background: url("../images/icon-zoom.png") no-repeat 0 50%;
+          color: #222;
+          text-decoration: none !important; }
+    .info-box .content .inner-cont {
+      overflow: hidden; }
+      .info-box .content .inner-cont .right-image {
+        padding-top: 9px; }
+      .info-box .content .inner-cont .left-text.inner {
+        width: 78%; }
+      .info-box .content .inner-cont .right-icon {
+        width: 18.2%;
+        float: right;
+        padding-top: 6px; }
+        .info-box .content .inner-cont .right-icon img {
+          display: block;
+          width: 100%; }
+    .info-box .content .ttl-blue {
+      display: inline-block;
+      vertical-align: top;
+      padding: 0 30px;
+      margin: 21px 0 6px;
+      background: #003a9e;
+      color: #fff;
+      font-size: 16px;
+      line-height: 33px;
+      font-weight: bold; }
+  .info-box .img-txt-hold {
+    overflow: hidden;
+    margin-bottom: 13px; }
+    .info-box .img-txt-hold .img-txt {
+      padding-top: 10px;
+      display: inline-block;
+      vertical-align: top;
+      width: 30.6%;
+      margin-right: 16px; }
+      .info-box .img-txt-hold .img-txt a {
+        color: #222; }
+      .info-box .img-txt-hold .img-txt img {
+        display: block;
+        width: 100%;
+        margin-bottom: 9px; }
+      .info-box .img-txt-hold .img-txt .txt {
+        display: block;
+        font-size: 14px;
+        line-height: 1.2;
+        text-align: center; }
+      .info-box .img-txt-hold .img-txt:last-child {
+        margin-right: 0; }
   @media only screen and (max-width: 800px) {
     .info-box {
       margin-bottom: 33px; }
@@ -2224,7 +2328,73 @@ input.btn {
         .info-box .center-images .image {
           padding: 0;
           width: 100%;
-          margin-bottom: 20px; } }
+          margin-bottom: 20px; }
+      .info-box .head {
+        margin-bottom: 15px;
+        padding-bottom: 9px; }
+        .info-box .head h3 {
+          float: none;
+          margin-bottom: 6px; }
+        .info-box .head:after {
+          width: 150px; }
+        .info-box .head .patent {
+          float: none;
+          margin-left: 0;
+          font-size: 12px;
+          line-height: 16px; }
+      .info-box .content {
+        overflow: hidden; }
+        .info-box .content h4 {
+          font-size: 16px;
+          line-height: 27px;
+          margin-bottom: 4px; }
+        .info-box .content .left-text {
+          width: 100%;
+          float: none; }
+          .info-box .content .left-text p {
+            font-size: 14px;
+            line-height: 24px; }
+        .info-box .content .right-image {
+          width: 100%;
+          float: none;
+          padding-top: 14px; }
+          .info-box .content .right-image p.zoom {
+            display: none; }
+        .info-box .content .inner-cont {
+          overflow: hidden; }
+          .info-box .content .inner-cont .right-image {
+            padding-top: 9px; }
+          .info-box .content .inner-cont .left-text.inner {
+            width: 100%; }
+          .info-box .content .inner-cont .right-icon {
+            width: 140px;
+            float: none;
+            margin: 0 auto;
+            padding-top: 5px; }
+        .info-box .content .ttl-blue {
+          padding: 0 27px;
+          margin: 19px 0 2px;
+          font-size: 14px;
+          line-height: 28px; }
+      .info-box .img-txt-hold {
+        margin-bottom: 10px;
+        padding-top: 10px;
+        -display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .info-box .img-txt-hold .img-txt {
+          padding-top: 0;
+          display: block;
+          width: 48%;
+          margin-right: 0; }
+          .info-box .img-txt-hold .img-txt img {
+            margin-bottom: 5px; }
+          .info-box .img-txt-hold .img-txt .txt {
+            font-size: 12px; } }
 
 /* project blocks */
 .project-blocks {
@@ -3023,3 +3193,22 @@ h2.title-blue {
           display: block; }
     .csr-activities .gray-holder .info-box {
       margin-bottom: 30px; } }
+
+/* company info */
+.company-info {
+  margin-bottom: 45px;
+  overflow: hidden; }
+  .company-info h2.title-blue {
+    margin-bottom: 31px; }
+  .company-info .info-box {
+    margin-bottom: 20px; }
+    .company-info .info-box.comp-box {
+      margin-bottom: 77px; }
+  @media only screen and (max-width: 800px) {
+    .company-info h2.title-blue {
+      margin-bottom: 13px;
+      font-size: 23px; }
+    .company-info .info-box {
+      margin-bottom: 38px; }
+      .company-info .info-box.comp-box {
+        margin-bottom: 38px; } }

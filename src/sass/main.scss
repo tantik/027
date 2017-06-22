@@ -1639,6 +1639,137 @@ input.btn{
 			}
 		}
 	}
+	.head{
+		position: relative;
+		margin-bottom: 20px;
+		padding-bottom: 10px;
+		overflow: hidden;
+		h3{
+			margin: 0;
+			padding: 0;
+			float: left;
+			&:before,
+			&:after{
+				display: none;
+			}
+		}
+		&:before,
+		&:after{
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background: #ddd;
+		}
+		&:after{
+			width: 300px;
+			background: $blue;
+		}
+		.patent{
+			float: right;
+			margin-left: 10px;
+			font-size: 14px;
+			line-height: 30px;
+		}
+	}
+	.content{
+		overflow: hidden;
+		h4{
+			font-size: 18px;
+			line-height: 30px;
+			color: $blue;
+			margin-bottom: 2px;
+		}
+		.left-text{
+			width: 65%;
+			float: left;
+		}
+		.right-image{
+			width: 32.5%;
+			float: right;
+			img{
+				display: block;
+				width: 100%;
+				&.frame{
+					border: 1px solid #b2b2b2;
+					@include box-sizing;
+				}
+			}
+			p.zoom{
+				margin: 10px 0 0;
+				text-align: right;
+				a{
+					display: inline-block;
+					vertical-align: top;
+					padding-left: 24px;
+					font-size: 14px;
+					line-height: 1.2;
+					background: url('../images/icon-zoom.png') no-repeat 0 50%;
+					color: $gray;
+					text-decoration: none !important;
+				}
+			}
+		}
+		.inner-cont{
+			overflow: hidden;
+			.right-image{
+				padding-top: 9px;
+			}
+			.left-text.inner{
+				width: 78%;
+			}
+			.right-icon{
+				width: 18.2%;
+				float: right;
+				padding-top: 6px;
+				img{
+					display: block;
+					width: 100%;
+				}
+			}
+		}
+		.ttl-blue{
+			display: inline-block;
+			vertical-align: top;
+			padding: 0 30px;
+			margin: 21px 0 6px;
+			background: $blue;
+			color: $white;
+			font-size: 16px;
+			line-height: 33px;
+			font-weight: bold;
+		}
+	}
+	.img-txt-hold{
+		overflow: hidden;
+		margin-bottom: 13px;
+		.img-txt{
+			padding-top: 10px;
+			display: inline-block;
+			vertical-align: top;
+			width: 30.6%;
+			margin-right: 16px;
+			a{
+				color: $gray;
+			}
+			img{
+				display: block;
+				width: 100%;
+				margin-bottom: 9px;
+			}
+			.txt{
+				display: block;
+				font-size: 14px;
+				line-height: 1.2;
+				text-align: center;
+			}
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
 	@media only screen and (max-width: 800px) {
 		margin-bottom: 33px;
 		&.sp-box1{
@@ -1684,6 +1815,86 @@ input.btn{
 				padding: 0;
 				width: 100%;
 				margin-bottom: 20px;
+			}
+		}
+		.head{
+			margin-bottom: 15px;
+			padding-bottom: 9px;
+			h3{
+				float: none;
+				margin-bottom: 6px;
+			}
+			&:after{
+				width: 150px;
+			}
+			.patent{
+				float: none;
+				margin-left: 0;
+				font-size: 12px;
+				line-height: 16px;
+			}
+		}
+		.content{
+			overflow: hidden;
+			h4{
+				font-size: 16px;
+				line-height: 27px;
+				margin-bottom: 4px;
+			}
+			.left-text{
+				width: 100%;
+				float: none;
+				p{
+					font-size: 14px;
+					line-height: 24px;
+				}
+			}
+			.right-image{
+				width: 100%;
+				float: none;
+				padding-top: 14px;
+				p.zoom{
+					display: none;
+				}
+			}
+			.inner-cont{
+				overflow: hidden;
+				.right-image{
+					padding-top: 9px;
+				}
+				.left-text.inner{
+					width: 100%;
+				}
+				.right-icon{
+					width: 140px;
+					float: none;
+					margin: 0 auto;
+					padding-top: 5px;
+				}
+			}
+			.ttl-blue{
+				padding: 0 27px;
+				margin: 19px 0 2px;
+				font-size: 14px;
+				line-height: 28px;
+			}
+		}
+		.img-txt-hold{
+			margin-bottom: 10px;
+			padding-top: 10px;
+			@include box-flex;
+			justify-content: space-between;
+			.img-txt{
+				padding-top: 0;
+				display:block;
+				width: 48%;
+				margin-right: 0;
+				img{
+					margin-bottom: 5px;
+				}
+				.txt{
+					font-size: 12px;
+				}
 			}
 		}
 	}
@@ -2667,8 +2878,32 @@ h2.title-blue{
 		}
 	}
 }
-
-
+/* company info */
+.company-info{
+	margin-bottom: 45px;
+	overflow: hidden;
+	h2.title-blue{
+		margin-bottom: 31px;
+	}
+	.info-box{
+		margin-bottom: 20px;
+		&.comp-box{
+			margin-bottom: 77px;
+		}
+	}
+	@media only screen and (max-width: 800px) {
+		h2.title-blue{
+			margin-bottom: 13px;
+			font-size: 23px;
+		}
+		.info-box{
+			margin-bottom: 38px;
+			&.comp-box{
+				margin-bottom: 38px;
+			}
+		}
+	}
+}
 
 
 
