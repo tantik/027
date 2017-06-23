@@ -2,36 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30cdd98c-22a6-4e54-9258-5d87f5492b69" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/contact-send completely.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/contact-send completely.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/catalogs-download.html" afterPath="$PROJECT_DIR$/public/catalogs-download.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/common/css/main.css" afterPath="$PROJECT_DIR$/public/common/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/common/css/main.min.css" afterPath="$PROJECT_DIR$/public/common/css/main.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/common/js/main.js" afterPath="$PROJECT_DIR$/public/common/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/common/js/main.min.js" afterPath="$PROJECT_DIR$/public/common/js/main.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/company-information.html" afterPath="$PROJECT_DIR$/public/company-information.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/company.html" afterPath="$PROJECT_DIR$/public/company.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/contact.html" afterPath="$PROJECT_DIR$/public/contact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/design.html" afterPath="$PROJECT_DIR$/public/design.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/manufacturing.html" afterPath="$PROJECT_DIR$/public/manufacturing.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/news.html" afterPath="$PROJECT_DIR$/public/news.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/news2.html" afterPath="$PROJECT_DIR$/public/news2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/project.html" afterPath="$PROJECT_DIR$/public/project.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/project2.html" afterPath="$PROJECT_DIR$/public/project2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/catalogs-download.html" afterPath="$PROJECT_DIR$/src/catalogs-download.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/company-information.html" afterPath="$PROJECT_DIR$/src/company-information.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/company.html" afterPath="$PROJECT_DIR$/src/company.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/contact.html" afterPath="$PROJECT_DIR$/src/contact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/design.html" afterPath="$PROJECT_DIR$/src/design.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/javascripts/main.js" afterPath="$PROJECT_DIR$/src/javascripts/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/manufacturing.html" afterPath="$PROJECT_DIR$/src/manufacturing.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/news.html" afterPath="$PROJECT_DIR$/src/news.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/news2.html" afterPath="$PROJECT_DIR$/src/news2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project.html" afterPath="$PROJECT_DIR$/src/project.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project2.html" afterPath="$PROJECT_DIR$/src/project2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/main.scss" afterPath="$PROJECT_DIR$/src/sass/main.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -46,14 +19,14 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.47021613">
+    <splitter split-orientation="horizontal" split-proportion="0.4348972">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/sass/main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="585">
-                  <caret line="3042" column="20" lean-forward="true" selection-start-line="3042" selection-start-column="20" selection-end-line="3042" selection-end-column="20" />
+                <state relative-caret-position="255">
+                  <caret line="3334" column="0" lean-forward="true" selection-start-line="3334" selection-start-column="0" selection-end-line="3334" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -93,7 +66,7 @@
             <entry file="file://$PROJECT_DIR$/src/javascripts/main.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="726">
-                  <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+                  <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
@@ -136,11 +109,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="product.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="product.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/product.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="563">
-                  <caret line="339" column="26" lean-forward="true" selection-start-line="339" selection-start-column="26" selection-end-line="339" selection-end-column="26" />
+                  <caret line="339" column="26" lean-forward="false" selection-start-line="339" selection-start-column="26" selection-end-line="339" selection-end-column="26" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="product-intro.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/product-intro.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="308">
+                  <caret line="264" column="0" lean-forward="false" selection-start-line="264" selection-start-column="0" selection-end-line="264" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -152,9 +135,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.inner-content</find>
-      <find>.form-table</find>
-      <find>main</find>
       <find>.title-image</find>
       <find>.manufacturing-blocks</find>
       <find>.project-box</find>
@@ -182,6 +162,9 @@
       <find>comp-box</find>
       <find>.history-block</find>
       <find>zoom</find>
+      <find>product info box</find>
+      <find>form-table</find>
+      <find>product-info</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -216,6 +199,7 @@
         <option value="$PROJECT_DIR$/src/manufacturing.html" />
         <option value="$PROJECT_DIR$/src/company.html" />
         <option value="$PROJECT_DIR$/src/product.html" />
+        <option value="$PROJECT_DIR$/src/product-intro.html" />
         <option value="$PROJECT_DIR$/src/sass/main.scss" />
       </list>
     </option>
@@ -373,12 +357,12 @@
       <workItem from="1497948881035" duration="737000" />
       <workItem from="1497950051997" duration="15314000" />
       <workItem from="1498028029656" duration="20386000" />
-      <workItem from="1498116843631" duration="36839000" />
+      <workItem from="1498116843631" duration="45278000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259530000" />
+    <option name="totallyTimeSpent" value="267969000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -423,22 +407,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sass/base/_reset.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1760">
-          <caret line="80" column="1" lean-forward="true" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/javascripts/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/utils/_mixins.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -659,7 +627,7 @@
     <entry file="file://$PROJECT_DIR$/src/javascripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="726">
-          <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+          <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -766,15 +734,31 @@
     <entry file="file://$PROJECT_DIR$/src/product.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="563">
-          <caret line="339" column="26" lean-forward="true" selection-start-line="339" selection-start-column="26" selection-end-line="339" selection-end-column="26" />
+          <caret line="339" column="26" lean-forward="false" selection-start-line="339" selection-start-column="26" selection-end-line="339" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/tables.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="184" column="22" lean-forward="false" selection-start-line="184" selection-start-column="22" selection-end-line="184" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/product-intro.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="264" column="0" lean-forward="false" selection-start-line="264" selection-start-column="0" selection-end-line="264" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="3042" column="20" lean-forward="true" selection-start-line="3042" selection-start-column="20" selection-end-line="3042" selection-end-column="20" />
+        <state relative-caret-position="255">
+          <caret line="3334" column="0" lean-forward="true" selection-start-line="3334" selection-start-column="0" selection-end-line="3334" selection-end-column="0" />
           <folding />
         </state>
       </provider>
