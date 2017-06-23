@@ -28,6 +28,14 @@ function initPage(){
 	initScrollController();
 	mobileMenu();
 	initSameHeight();
+
+	$("#fancy-image1").fancybox();
+	$("#fancy-image2").fancybox();
+	$("#fancy-image3").fancybox();
+	$("#fancy-image4").fancybox();
+
+
+	
 	if (window.innerWidth <= 800) {
 		$('.nav ul').slideBlock({
 			linkSlide: 'a.slide-opener',
@@ -35,8 +43,16 @@ function initPage(){
 			mode: 'accordion',
 			childSlide:	'accordion-child'
 		});
+
+		$('.sidebar').slideBlock({
+			linkSlide: 'a.slide-opener',
+			slideBlock: 'ul.side-nav'
+		});
+
+
 	}
 }
+
 
 function initTabs() {
 	jQuery.browser = {};
