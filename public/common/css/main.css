@@ -2232,25 +2232,45 @@ input.btn {
     .info-box .content .left-text {
       width: 65%;
       float: left; }
-    .info-box .content .right-image {
+    .info-box .content .right-text {
+      width: 65%;
+      float: right; }
+    .info-box .content .right-image,
+    .info-box .content .left-image {
       width: 32.5%;
       float: right; }
-      .info-box .content .right-image img {
+      .info-box .content .right-image.img2,
+      .info-box .content .left-image.img2 {
+        width: 30.3%;
+        padding-top: 7px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 24px; }
+        .info-box .content .right-image.img2 img,
+        .info-box .content .left-image.img2 img {
+          margin-bottom: 1px; }
+      .info-box .content .right-image img,
+      .info-box .content .left-image img {
         display: block;
         width: 100%; }
-        .info-box .content .right-image img.frame {
+        .info-box .content .right-image img.frame,
+        .info-box .content .left-image img.frame {
           border: 1px solid #b2b2b2;
           -ms-box-sizing: border-box;
           box-sizing: border-box; }
-      .info-box .content .right-image.frame img {
+      .info-box .content .right-image.frame img,
+      .info-box .content .left-image.frame img {
         border: 1px solid #b2b2b2;
         -ms-box-sizing: border-box;
         box-sizing: border-box; }
-      .info-box .content .right-image .zoom {
+      .info-box .content .right-image .zoom,
+      .info-box .content .left-image .zoom {
         margin: 10px 0 0;
         text-align: right; }
         .info-box .content .right-image .zoom a,
-        .info-box .content .right-image .zoom span {
+        .info-box .content .right-image .zoom span,
+        .info-box .content .left-image .zoom a,
+        .info-box .content .left-image .zoom span {
           display: inline-block;
           vertical-align: top;
           padding-left: 24px;
@@ -2259,6 +2279,8 @@ input.btn {
           background: url("../images/icon-zoom.png") no-repeat 0 50%;
           color: #222;
           text-decoration: none !important; }
+    .info-box .content .left-image {
+      float: left; }
     .info-box .content .inner-cont {
       overflow: hidden; }
       .info-box .content .inner-cont .right-image {

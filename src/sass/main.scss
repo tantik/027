@@ -1696,9 +1696,24 @@ input.btn{
 			width: 65%;
 			float: left;
 		}
-		.right-image{
+		.right-text{
+			width: 65%;
+			float: right;
+		}
+		.right-image,
+		.left-image{
 			width: 32.5%;
 			float: right;
+			&.img2{
+				width: 30.3%;
+				padding-top: 7px;
+				text-align: center;
+				font-size: 14px;
+				line-height: 24px;
+				img{
+					margin-bottom: 1px;
+				}
+			}
 			img{
 				display: block;
 				width: 100%;
@@ -1728,6 +1743,9 @@ input.btn{
 					text-decoration: none !important;
 				}
 			}
+		}
+		.left-image{
+			float: left;
 		}
 		.inner-cont{
 			overflow: hidden;
