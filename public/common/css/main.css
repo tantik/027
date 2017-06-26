@@ -2326,6 +2326,36 @@ input.btn {
         text-align: center; }
       .info-box .img-txt-hold .img-txt:last-child {
         margin-right: 0; }
+  .info-box .center-two-img {
+    -display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 20px; }
+    .info-box .center-two-img .img-col {
+      width: 47.23%;
+      text-align: center; }
+      .info-box .center-two-img .img-col .img {
+        width: 100%;
+        height: 290px;
+        -display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-bottom: 9px; }
+        .info-box .center-two-img .img-col .img img {
+          display: block;
+          max-width: 100%;
+          max-height: 100%; }
   @media only screen and (max-width: 800px) {
     .info-box {
       margin-bottom: 33px; }
@@ -2752,6 +2782,7 @@ h2.title-blue {
         .downloads-list li .hold .image img {
           display: block;
           width: 100%;
+          height: auto !important;
           border: 1px solid #ddd;
           -ms-box-sizing: border-box;
           box-sizing: border-box; }
@@ -3115,10 +3146,8 @@ h2.title-blue {
 
 /* history block */
 .history-block {
-  margin-right: -9999px;
-  margin-left: -9999px;
-  padding: 72px 9999px 0;
-  background: url("../images/bg-history-block.png") no-repeat 50% 0;
+  padding: 72px 0 0;
+  background: url("../images/bg-history-block.png") no-repeat 100% 0;
   overflow: hidden; }
   .history-block .title-blue {
     margin-bottom: 33px; }
@@ -3159,7 +3188,8 @@ h2.title-blue {
           background: #f5f5f5; }
   @media only screen and (max-width: 800px) {
     .history-block {
-      padding-top: 32px; }
+      padding-top: 32px;
+      background: none; }
       .history-block h2.title-blue {
         font-size: 23px;
         margin-bottom: 16px; }
@@ -3191,22 +3221,13 @@ h2.title-blue {
   padding-bottom: 53px;
   overflow: hidden; }
   .csr-activities .gray-holder h2.title-blue {
-    margin-bottom: 33px; }
+    margin-bottom: 33px;
+    font-family: "明朝体", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", Osaka, sans-serif; }
   .csr-activities .gray-holder .text-banner {
-    margin-bottom: 75px;
-    padding: 38px 30px 35px;
-    letter-spacing: 1px;
-    text-align: center;
-    background: url("../images/bg-csr-banner.jpg") no-repeat 50% 50%;
-    background-size: cover;
-    overflow: hidden; }
-    .csr-activities .gray-holder .text-banner p {
-      font-size: 16px;
-      line-height: 40px; }
-    .csr-activities .gray-holder .text-banner h3 {
-      font-size: 22px;
-      line-height: 50px;
-      color: #003a9e; }
+    margin-bottom: 75px; }
+    .csr-activities .gray-holder .text-banner img {
+      display: block;
+      width: 100%; }
 
 @media only screen and (max-width: 800px) {
   .csr-activities .gray-holder {
@@ -3216,20 +3237,7 @@ h2.title-blue {
       font-size: 23px;
       margin-bottom: 16px; }
     .csr-activities .gray-holder .text-banner {
-      margin-bottom: 28px;
-      padding: 22px 5px 20px;
-      background: url("../images/bg-csr-banner-sp.jpg") no-repeat 50% 50%;
-      background-size: cover; }
-      .csr-activities .gray-holder .text-banner p {
-        font-size: 13px;
-        line-height: 30px; }
-      .csr-activities .gray-holder .text-banner h3 {
-        font-size: 18px;
-        line-height: 32px;
-        letter-spacing: 0;
-        padding: 3px 0; }
-        .csr-activities .gray-holder .text-banner h3 span {
-          display: block; }
+      margin-bottom: 28px; }
     .csr-activities .gray-holder .info-box {
       margin-bottom: 30px; } }
 
@@ -3246,9 +3254,9 @@ h2.title-blue {
       margin-bottom: 13px;
       font-size: 23px; }
     .company-info .info-box {
-      margin-bottom: 38px; }
+      margin-bottom: 76px; }
       .company-info .info-box.comp-box {
-        margin-bottom: 38px; } }
+        margin-bottom: 76px; } }
 
 /* products block */
 .products-block:after {
@@ -3541,6 +3549,9 @@ h2.title-blue {
     border-left: 0;
     text-align: left;
     padding-left: 30px; }
+  .lineup-table table tr th:last-child,
+  .lineup-table table tr td:last-child {
+    border-right: 0; }
 
 .lineup-table p.notes {
   padding-top: 15px;
@@ -3612,6 +3623,7 @@ h2.title-blue {
       .scroll-holder .scroll-content.lineup {
         width: 900px; } }
 
+/*  */
 /* popups */
 #fancybox-overlay {
   background: black !important; }
