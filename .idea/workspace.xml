@@ -5,9 +5,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/common/css/main.css" afterPath="$PROJECT_DIR$/public/common/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/common/css/main.min.css" afterPath="$PROJECT_DIR$/public/common/css/main.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/product.html" afterPath="$PROJECT_DIR$/public/product.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/product.html" afterPath="$PROJECT_DIR$/src/product.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/main.scss" afterPath="$PROJECT_DIR$/src/sass/main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/manufacturing.html" afterPath="$PROJECT_DIR$/public/manufacturing.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/manufacturing.html" afterPath="$PROJECT_DIR$/src/manufacturing.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/base/_reset.scss" afterPath="$PROJECT_DIR$/src/sass/base/_reset.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,14 +21,14 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.34528202">
+    <splitter split-orientation="horizontal" split-proportion="0.43173432">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/sass/main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="694">
-                  <caret line="3441" column="0" lean-forward="true" selection-start-line="3441" selection-start-column="0" selection-end-line="3441" selection-end-column="0" />
+                <state relative-caret-position="1869">
+                  <caret line="3430" column="18" lean-forward="true" selection-start-line="3430" selection-start-column="18" selection-end-line="3430" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -57,8 +57,8 @@
           <file leaf-file-name="_reset.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/sass/base/_reset.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="528">
-                  <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+                <state relative-caret-position="506">
+                  <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -67,7 +67,7 @@
           <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/javascripts/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="314">
+                <state relative-caret-position="7568">
                   <caret line="344" column="8" lean-forward="false" selection-start-line="344" selection-start-column="8" selection-end-line="344" selection-end-column="8" />
                   <folding />
                 </state>
@@ -111,11 +111,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="product.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="product.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/product.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="761">
-                  <caret line="423" column="10" lean-forward="false" selection-start-line="423" selection-start-column="10" selection-end-line="423" selection-end-column="10" />
+                <state relative-caret-position="748">
+                  <caret line="432" column="7" lean-forward="false" selection-start-line="432" selection-start-column="7" selection-end-line="432" selection-end-column="7" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="manufacturing.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/manufacturing.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="692">
+                  <caret line="289" column="26" lean-forward="true" selection-start-line="289" selection-start-column="26" selection-end-line="289" selection-end-column="26" />
                   <folding />
                 </state>
               </provider>
@@ -127,8 +137,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>access-block</find>
-      <find>access block</find>
       <find>gray-holder</find>
       <find>iframe</find>
       <find>map</find>
@@ -157,6 +165,8 @@
       <find>icons-list</find>
       <find>right-image</find>
       <find>sidebar</find>
+      <find>10-2～10-11</find>
+      <find>sup</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -173,7 +183,6 @@
         <option value="$PROJECT_DIR$/src/新着一覧.html" />
         <option value="$PROJECT_DIR$/src/sass/utils/_variables.scss" />
         <option value="$PROJECT_DIR$/src/sass/layout/_footer.scss" />
-        <option value="$PROJECT_DIR$/src/sass/base/_reset.scss" />
         <option value="$PROJECT_DIR$/src/sass/layout/_header.scss" />
         <option value="$PROJECT_DIR$/public/design.html" />
         <option value="$PROJECT_DIR$/public/contact.html" />
@@ -186,7 +195,6 @@
         <option value="$PROJECT_DIR$/src/design.html" />
         <option value="$PROJECT_DIR$/src/contact.html" />
         <option value="$PROJECT_DIR$/src/index.html" />
-        <option value="$PROJECT_DIR$/src/manufacturing.html" />
         <option value="$PROJECT_DIR$/src/company-information.html" />
         <option value="$PROJECT_DIR$/src/company.html" />
         <option value="$PROJECT_DIR$/public/product-intro2.html" />
@@ -194,6 +202,8 @@
         <option value="$PROJECT_DIR$/src/javascripts/main.js" />
         <option value="$PROJECT_DIR$/src/product.html" />
         <option value="$PROJECT_DIR$/src/sass/main.scss" />
+        <option value="$PROJECT_DIR$/src/manufacturing.html" />
+        <option value="$PROJECT_DIR$/src/sass/base/_reset.scss" />
       </list>
     </option>
   </component>
@@ -352,12 +362,13 @@
       <workItem from="1498028029656" duration="20386000" />
       <workItem from="1498116843631" duration="48391000" />
       <workItem from="1498462727232" duration="9920000" />
-      <workItem from="1498477018703" duration="6539000" />
+      <workItem from="1498477018703" duration="7125000" />
+      <workItem from="1498551068588" duration="773000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="287541000" />
+    <option name="totallyTimeSpent" value="288900000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -376,12 +387,12 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.156563" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295838" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5060622" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.4939378" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -557,14 +568,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/新着一覧.html" />
-    <entry file="file://$PROJECT_DIR$/src/sass/base/_reset.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/layout/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10560">
@@ -624,13 +627,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/contact-send completely.html" />
-    <entry file="file://$PROJECT_DIR$/src/manufacturing.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="109" lean-forward="false" selection-start-line="9" selection-start-column="109" selection-end-line="9" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/project2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -667,7 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="184" column="22" lean-forward="false" selection-start-line="184" selection-start-column="22" selection-end-line="184" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -705,7 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7392">
           <caret line="336" column="63" lean-forward="true" selection-start-line="336" selection-start-column="63" selection-end-line="336" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -713,30 +707,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
           <caret line="382" column="10" lean-forward="false" selection-start-line="382" selection-start-column="10" selection-end-line="382" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/product.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="761">
-          <caret line="423" column="10" lean-forward="false" selection-start-line="423" selection-start-column="10" selection-end-line="423" selection-end-column="10" />
+        <state relative-caret-position="748">
+          <caret line="432" column="7" lean-forward="false" selection-start-line="432" selection-start-column="7" selection-end-line="432" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/javascripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
+        <state relative-caret-position="7568">
           <caret line="344" column="8" lean-forward="false" selection-start-line="344" selection-start-column="8" selection-end-line="344" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manufacturing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="692">
+          <caret line="289" column="26" lean-forward="true" selection-start-line="289" selection-start-column="26" selection-end-line="289" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/base/_reset.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="3441" column="0" lean-forward="true" selection-start-line="3441" selection-start-column="0" selection-end-line="3441" selection-end-column="0" />
+        <state relative-caret-position="1869">
+          <caret line="3430" column="18" lean-forward="true" selection-start-line="3430" selection-start-column="18" selection-end-line="3430" selection-end-column="18" />
           <folding />
         </state>
       </provider>
