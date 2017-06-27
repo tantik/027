@@ -3349,6 +3349,16 @@ h2.title-blue {
       text-align: center;
       font-size: 16px;
       line-height: 24px; }
+  .product-list.home {
+    margin: 0 0 40px;
+    padding-top: 0; }
+    .product-list.home li a {
+      color: #003a9e; }
+      .product-list.home li a img {
+        height: auto !important;
+        border: 0; }
+      .product-list.home li a em {
+        font-style: normal; }
   @media only screen and (max-width: 800px) {
     .product-list {
       padding-top: 9px;

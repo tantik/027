@@ -3025,6 +3025,22 @@ h2.title-blue{
 			line-height: 24px;
 		}
 	}
+	&.home{
+		margin: 0 0 40px;
+		padding-top: 0;
+		li{
+			a{
+				color: #003a9e;
+				img{
+					height: auto !important;
+					border: 0;
+				}
+				em{
+					font-style: normal;
+				}
+			}
+		}
+	}
 	@media only screen and (max-width: 800px) {
 		padding-top: 9px;
 		margin: 0 -7px 31px;
