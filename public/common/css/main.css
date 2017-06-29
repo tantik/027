@@ -2267,6 +2267,30 @@ input.btn {
         border: 1px solid #b2b2b2;
         -ms-box-sizing: border-box;
         box-sizing: border-box; }
+      .info-box .content .right-image.frame.gif,
+      .info-box .content .left-image.frame.gif {
+        width: 390px; }
+        .info-box .content .right-image.frame.gif .imgs,
+        .info-box .content .left-image.frame.gif .imgs {
+          width: 390px;
+          height: 260px;
+          text-align: center;
+          border: 1px solid #b2b2b2;
+          -ms-box-sizing: border-box;
+          box-sizing: border-box;
+          position: relative; }
+          .info-box .content .right-image.frame.gif .imgs img,
+          .info-box .content .left-image.frame.gif .imgs img {
+            max-width: 100%;
+            height: auto;
+            max-height: 100%;
+            width: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border: 0;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
       .info-box .content .right-image .zoom,
       .info-box .content .left-image .zoom {
         margin: 10px 0 0;
@@ -2448,6 +2472,21 @@ input.btn {
             padding-top: 17px;
             width: 100%;
             float: none; }
+          .info-box .content .right-image.gif,
+          .info-box .content .left-image.gif {
+            width: 100%; }
+            .info-box .content .right-image.gif .imgs,
+            .info-box .content .left-image.gif .imgs {
+              width: 100%;
+              height: auto; }
+              .info-box .content .right-image.gif .imgs img,
+              .info-box .content .left-image.gif .imgs img {
+                position: relative;
+                width: 100%;
+                top: 0;
+                left: 0;
+                -webkit-transform: translate(0, 0);
+                transform: translate(0, 0); }
         .info-box .content .inner-cont {
           overflow: hidden; }
           .info-box .content .inner-cont .right-image {

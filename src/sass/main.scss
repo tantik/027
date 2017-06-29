@@ -1727,6 +1727,32 @@ input.btn{
 					border: 1px solid #b2b2b2;
 					@include box-sizing;
 				}
+				&.gif{
+					width: 390px;
+					.imgs{
+						width: 390px;
+						height: 260px;
+						text-align: center;
+						border: 1px solid #b2b2b2;
+						@include box-sizing;
+						position: relative;
+						img{
+							max-width: 100%;
+							height: auto;
+							max-height: 100%;
+							width: auto;
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							border: 0;
+							-moz-transform: translate(-50%, -50%);
+							-ms-transform: translate(-50%, -50%);
+							-webkit-transform: translate(-50%, -50%);
+							-o-transform: translate(-50%, -50%);
+							transform: translate(-50%, -50%);
+						}
+					}
+				}
 			}
 			.zoom{
 				margin: 10px 0 0;
@@ -1931,6 +1957,24 @@ input.btn{
 					padding-top: 17px;
 					width: 100%;
 					float: none;
+				}
+				&.gif{
+					width: 100%;
+					.imgs{
+						width: 100%;
+						height: auto;
+						img{
+							position: relative;
+							width: 100%;
+							top: 0;
+							left: 0;
+							-moz-transform: translate(0, 0);
+							-ms-transform: translate(0, 0);
+							-webkit-transform: translate(0, 0);
+							-o-transform: translate(0, 0);
+							transform: translate(0, 0);
+						}
+					}
 				}
 			}
 			.inner-cont{
