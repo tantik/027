@@ -193,7 +193,8 @@ input, select {
             border-left: 1px solid #ccc; }
           #header .holder .nav-holder .nav > ul > li.full {
             position: static; }
-          #header .holder .nav-holder .nav > ul > li > a {
+          #header .holder .nav-holder .nav > ul > li > a,
+          #header .holder .nav-holder .nav > ul > li > div {
             display: block;
             position: relative;
             font-size: 15px;
@@ -201,7 +202,8 @@ input, select {
             color: #222;
             text-align: center;
             transition: color 0.5s ease; }
-            #header .holder .nav-holder .nav > ul > li > a:after {
+            #header .holder .nav-holder .nav > ul > li > a:after,
+            #header .holder .nav-holder .nav > ul > li > div:after {
               content: '';
               position: absolute;
               bottom: -7px;
@@ -211,14 +213,18 @@ input, select {
               background: #003a9e;
               transition: opacity 0.5s ease;
               opacity: 0; }
-            #header .holder .nav-holder .nav > ul > li > a:hover {
+            #header .holder .nav-holder .nav > ul > li > a:hover,
+            #header .holder .nav-holder .nav > ul > li > div:hover {
               color: #003a9e; }
-              #header .holder .nav-holder .nav > ul > li > a:hover:after {
+              #header .holder .nav-holder .nav > ul > li > a:hover:after,
+              #header .holder .nav-holder .nav > ul > li > div:hover:after {
                 opacity: 1; }
             @media only screen and (max-width: 1000px) {
-              #header .holder .nav-holder .nav > ul > li > a {
+              #header .holder .nav-holder .nav > ul > li > a,
+              #header .holder .nav-holder .nav > ul > li > div {
                 font-size: 12px; } }
-          #header .holder .nav-holder .nav > ul > li.active a {
+          #header .holder .nav-holder .nav > ul > li.active a,
+          #header .holder .nav-holder .nav > ul > li.active div {
             color: #003a9e; }
           #header .holder .nav-holder .nav > ul > li .drop {
             position: absolute;
@@ -3859,6 +3865,40 @@ input[type="radio"] {
   outline: none; }
   input[type="radio"]:checked {
     background-position: 0 -20px; }
+
+/* cant found page */
+.cant-found-page {
+  height: calc(100vh - 600px);
+  min-height: 300px;
+  -display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .cant-found-page .message h2 {
+    margin-bottom: 40px;
+    font-size: 36px;
+    width: 100%;
+    line-height: 1.4;
+    color: #003a9e; }
+  .cant-found-page .message p {
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.4; }
+  @media only screen and (max-width: 800px) {
+    .cant-found-page {
+      height: calc(100vh - 140px); }
+      .cant-found-page .message h2 {
+        font-size: 18px;
+        margin-bottom: 20px; }
+      .cant-found-page .message p {
+        font-size: 15px; } }
 
 /* popups */
 #fancybox-overlay {

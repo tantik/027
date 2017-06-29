@@ -3607,7 +3607,41 @@ input[type="radio"]{
 		background-position: 0 -20px;
 	}
 }
-
+/* cant found page */
+.cant-found-page{
+	height: calc(100vh - 600px);
+	min-height: 300px;
+	@include box-flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	.message{
+		h2{
+			margin-bottom: 40px;
+			font-size: 36px;
+			width: 100%;
+			line-height: 1.4;
+			color: $blue;
+		}
+		p{
+			width: 100%;
+			font-size: 18px;
+			line-height: 1.4;
+		}
+	}
+	@media only screen and (max-width: 800px) {
+		height: calc(100vh - 140px);
+		.message {
+			h2 {
+				font-size: 18px;
+				margin-bottom: 20px;
+			}
+			p {
+				font-size: 15px;
+			}
+		}
+	}
+}
 
 
 
