@@ -1045,11 +1045,13 @@ input.btn{
 							.category{
 								margin-right: 22px;
 								border: 1px solid $blue;
-								width: 75px;
+								min-width: 75px;
+								padding: 0 3px;
 								float: left;
 								font-size: 12px;
 								line-height: 21px;
 								color: $blue;
+								letter-spacing: 0;
 								text-align: center;
 							}
 							.text{
@@ -1733,7 +1735,9 @@ input.btn{
 			}
 			img{
 				display: block;
-				width: 100%;
+				width: 100% !important;
+				height: auto !important;
+				max-width: 100% !important;
 				&.frame{
 					border: 1px solid #b2b2b2;
 					@include box-sizing;
@@ -1804,7 +1808,9 @@ input.btn{
 				padding-top: 6px;
 				img{
 					display: block;
-					width: 100%;
+					width: 100% !important;
+					height: auto !important;
+					max-width: 100% !important;
 				}
 			}
 		}
@@ -1982,7 +1988,9 @@ input.btn{
 						height: auto;
 						img{
 							position: relative;
-							width: 100%;
+							width: 100% !important;
+							height: auto !important;
+							max-width: 100% !important;
 							top: 0;
 							left: 0;
 							-moz-transform: translate(0, 0);
@@ -2116,7 +2124,9 @@ input.btn{
 			padding-top: 8px;
 			img{
 				display: block;
-				width: 100%;
+				width: 100% !important;
+				height: auto !important;
+				max-width: 100% !important;
 			}
 		}
 	}
@@ -2167,7 +2177,9 @@ input.btn{
 				padding-top: 8px;
 				img{
 					display: block;
-					width: 100%;
+					width: 100% !important;
+					height: auto !important;
+					max-width: 100% !important;
 				}
 			}
 		}
@@ -2254,7 +2266,9 @@ input.btn{
 			overflow: hidden;
 			img{
 				display: block;
-				width: 100%;
+				width: 100% !important;
+				height: auto !important;
+				max-width: 100% !important;
 			}
 			.top-img{
 				width: 83.6%;
@@ -2270,7 +2284,8 @@ input.btn{
 			margin-bottom: 17px;
 			padding: 7px 20px 0;
 			overflow: hidden;
-			a{
+			a,
+			.col{
 				display: block;
 				width: 31.7%;
 				img{
@@ -2322,7 +2337,8 @@ input.btn{
 				padding: 0;
 				flex-wrap: wrap;
 				margin: 0;
-				a{
+				a,
+				.col{
 					margin-bottom: 10px;
 					width: 100%;
 				}
@@ -3123,7 +3139,7 @@ h2.title-blue{
 }
 /* sidebar */
 .sidebar{
-	padding-top: 6px;
+	margin-top: 6px;
 	width: 20.833%;
 	float: right;
 	background: $white;

@@ -194,7 +194,7 @@ input, select {
           #header .holder .nav-holder .nav > ul > li.full {
             position: static; }
           #header .holder .nav-holder .nav > ul > li > a,
-          #header .holder .nav-holder .nav > ul > li > div {
+          #header .holder .nav-holder .nav > ul > li > div:first-child {
             display: block;
             position: relative;
             font-size: 15px;
@@ -203,7 +203,7 @@ input, select {
             text-align: center;
             transition: color 0.5s ease; }
             #header .holder .nav-holder .nav > ul > li > a:after,
-            #header .holder .nav-holder .nav > ul > li > div:after {
+            #header .holder .nav-holder .nav > ul > li > div:first-child:after {
               content: '';
               position: absolute;
               bottom: -7px;
@@ -214,17 +214,17 @@ input, select {
               transition: opacity 0.5s ease;
               opacity: 0; }
             #header .holder .nav-holder .nav > ul > li > a:hover,
-            #header .holder .nav-holder .nav > ul > li > div:hover {
+            #header .holder .nav-holder .nav > ul > li > div:first-child:hover {
               color: #003a9e; }
               #header .holder .nav-holder .nav > ul > li > a:hover:after,
-              #header .holder .nav-holder .nav > ul > li > div:hover:after {
+              #header .holder .nav-holder .nav > ul > li > div:first-child:hover:after {
                 opacity: 1; }
             @media only screen and (max-width: 1000px) {
               #header .holder .nav-holder .nav > ul > li > a,
-              #header .holder .nav-holder .nav > ul > li > div {
+              #header .holder .nav-holder .nav > ul > li > div:first-child {
                 font-size: 12px; } }
           #header .holder .nav-holder .nav > ul > li.active a,
-          #header .holder .nav-holder .nav > ul > li.active div {
+          #header .holder .nav-holder .nav > ul > li.active div:first-child {
             color: #003a9e; }
           #header .holder .nav-holder .nav > ul > li .drop {
             position: absolute;
@@ -233,6 +233,7 @@ input, select {
             padding-top: 11px;
             left: -9999px;
             opacity: 0;
+            text-align: left !important;
             transition: opacity 0.5s ease; }
             #header .holder .nav-holder .nav > ul > li .drop .hold {
               background: rgba(7, 51, 125, 0.9); }
@@ -1713,11 +1714,13 @@ input.btn {
               .whats-new .holder .tabs-holder .tab .news-list li a .category {
                 margin-right: 22px;
                 border: 1px solid #003a9e;
-                width: 75px;
+                min-width: 75px;
+                padding: 0 3px;
                 float: left;
                 font-size: 12px;
                 line-height: 21px;
                 color: #003a9e;
+                letter-spacing: 0;
                 text-align: center; }
               .whats-new .holder .tabs-holder .tab .news-list li a .text {
                 display: block;
@@ -2274,7 +2277,9 @@ input.btn {
       .info-box .content .right-image img,
       .info-box .content .left-image img {
         display: block;
-        width: 100%; }
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100% !important; }
         .info-box .content .right-image img.frame,
         .info-box .content .left-image img.frame {
           border: 1px solid #b2b2b2;
@@ -2339,7 +2344,9 @@ input.btn {
         padding-top: 6px; }
         .info-box .content .inner-cont .right-icon img {
           display: block;
-          width: 100%; }
+          width: 100% !important;
+          height: auto !important;
+          max-width: 100% !important; }
     .info-box .content .ttl-blue {
       display: inline-block;
       vertical-align: top;
@@ -2500,7 +2507,9 @@ input.btn {
               .info-box .content .right-image.gif .imgs img,
               .info-box .content .left-image.gif .imgs img {
                 position: relative;
-                width: 100%;
+                width: 100% !important;
+                height: auto !important;
+                max-width: 100% !important;
                 top: 0;
                 left: 0;
                 -webkit-transform: translate(0, 0);
@@ -2607,7 +2616,9 @@ input.btn {
       padding-top: 8px; }
       .project-box .content .right-image img {
         display: block;
-        width: 100%; }
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100% !important; }
   .project-box .gray-text {
     background: #f5f5f5;
     padding: 22px 20px 0 30px;
@@ -2644,7 +2655,9 @@ input.btn {
       padding-top: 8px; }
       .project-box .content .right-image img {
         display: block;
-        width: 100%; }
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100% !important; }
     .project-box .gray-text {
       padding: 10px 10px 0 15px;
       margin-bottom: 10px;
@@ -2710,7 +2723,9 @@ input.btn {
       overflow: hidden; }
       .sub-info-box .content .right-image img {
         display: block;
-        width: 100%; }
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100% !important; }
       .sub-info-box .content .right-image .top-img {
         width: 83.6%; }
       .sub-info-box .content .right-image .bot-img {
@@ -2727,10 +2742,12 @@ input.btn {
       margin-bottom: 17px;
       padding: 7px 20px 0;
       overflow: hidden; }
-      .sub-info-box .content .three-images a {
+      .sub-info-box .content .three-images a,
+      .sub-info-box .content .three-images .col {
         display: block;
         width: 31.7%; }
-        .sub-info-box .content .three-images a img {
+        .sub-info-box .content .three-images a img,
+        .sub-info-box .content .three-images .col img {
           display: block;
           width: 100%; }
     .sub-info-box .content .text p {
@@ -2766,7 +2783,8 @@ input.btn {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         margin: 0; }
-        .sub-info-box .content .three-images a {
+        .sub-info-box .content .three-images a,
+        .sub-info-box .content .three-images .col {
           margin-bottom: 10px;
           width: 100%; }
       .sub-info-box .content .right-image.sp-center {
@@ -3433,7 +3451,7 @@ h2.title-blue {
 
 /* sidebar */
 .sidebar {
-  padding-top: 6px;
+  margin-top: 6px;
   width: 20.833%;
   float: right;
   background: #fff;

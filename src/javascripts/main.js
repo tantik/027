@@ -108,26 +108,26 @@ function optionGallery() {
 			$('.mypop').removeClass('opn');
 			$('.hold1').removeClass('opn');
 		});
-
-		$(".fancy").fancybox({
-
-			toolbar: true,
-			buttons: [
-				'close'
-			],
-			arrows: false,
-			smallBtn: true,
-			iframe: {
-				preload: false
-			}
-		});
-
-		$("[data-fancybox]").fancybox({
-			thumbs: {
-				autoStart: true
-			}
-		});
 	}
+
+	$(".fancy").fancybox({
+
+		toolbar: true,
+		buttons: [
+			'close'
+		],
+		arrows: false,
+		smallBtn: true,
+		iframe: {
+			preload: false
+		}
+	});
+
+	$("[data-fancybox]").fancybox({
+		thumbs: {
+			autoStart: true
+		}
+	});
 }
 
 
