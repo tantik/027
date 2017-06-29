@@ -1871,9 +1871,9 @@ input.btn {
   .title-image.news {
     background: url("../images/img-title-news.jpg") no-repeat 50% 50%;
     background-size: cover; }
-  .title-image.contact, .title-image.catalogs {
+  .title-image.contact, .title-image.catalogs, .title-image.request {
     background: #274573; }
-    .title-image.contact .holder, .title-image.catalogs .holder {
+    .title-image.contact .holder, .title-image.catalogs .holder, .title-image.request .holder {
       height: 200px; }
   .title-image.project {
     background: url("../images/img-title-project-pc.jpg") no-repeat 50% 50%;
@@ -1929,7 +1929,7 @@ input.btn {
       .title-image .holder .head h2 {
         font-size: 24px;
         line-height: 1.2; }
-    .title-image.contact .holder, .title-image.catalogs .holder {
+    .title-image.contact .holder, .title-image.catalogs .holder, .title-image.request .holder {
       height: 150px; } }
 
 /* contact block */
@@ -2226,6 +2226,18 @@ input.btn {
       margin-left: 10px;
       font-size: 14px;
       line-height: 30px; }
+    .info-box .head .req {
+      float: right;
+      width: 48px;
+      height: 25px;
+      background: #bc0909;
+      text-align: center;
+      color: #fff;
+      border-radius: 2px;
+      font-size: 12px;
+      line-height: 25px;
+      font-style: normal;
+      margin-top: 2px; }
   .info-box .content {
     overflow: hidden; }
     .info-box .content h4 {
@@ -3755,6 +3767,99 @@ h2.title-blue {
       .icons-list li .text {
         line-height: 24px; } }
 
+/* request content  */
+.request-holder .holder {
+  max-width: 1000px; }
+
+.two-radio-boxes {
+  padding-bottom: 10px;
+  -display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .two-radio-boxes .box {
+    width: 48%;
+    background: #f5f5f5; }
+    .two-radio-boxes .box .hold {
+      padding: 40px 70px 50px; }
+      .two-radio-boxes .box .hold .img {
+        -display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        height: 280px;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-bottom: 31px; }
+        .two-radio-boxes .box .hold .img img {
+          display: block;
+          max-width: 100%;
+          max-height: 100%; }
+      .two-radio-boxes .box .hold h4 {
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+        letter-spacing: 2px; }
+
+.radio-list {
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 2px; }
+  .radio-list li {
+    overflow: hidden; }
+    .radio-list li input[type="radio"] {
+      margin: 6px 10px 0 0;
+      float: left; }
+    .radio-list li label {
+      display: block;
+      overflow: hidden; }
+    .radio-list li .input-text {
+      clear: both;
+      margin-left: 27px;
+      padding-top: 2px; }
+      .radio-list li .input-text input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        vertical-align: top;
+        margin: 0;
+        padding: 6px 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 14px;
+        line-height: 19px;
+        color: #222;
+        width: 100%;
+        outline: 0;
+        border-radius: 2px;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box; }
+        .radio-list li .input-text input[disabled="disabled"] {
+          background: #eee !important; }
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  margin: 0 7px 0 0;
+  padding: 0;
+  width: 17px;
+  height: 17px;
+  border: 0;
+  background: url("../images/bg-radio.png") no-repeat;
+  overflow: hidden;
+  outline: none; }
+  input[type="radio"]:checked {
+    background-position: 0 -20px; }
+
 /* popups */
 #fancybox-overlay {
   background: black !important; }
@@ -3772,6 +3877,12 @@ h2.title-blue {
 .mypop.opn {
   display: block; }
 
+.owl-carousel {
+  opacity: 0;
+  transition: opacity 0.5s ease; }
+  .owl-carousel.owl-loaded {
+    opacity: 1; }
+
 .mypop .close,
 .hold1 .close {
   position: absolute;
@@ -3782,40 +3893,82 @@ h2.title-blue {
   text-indent: -9999px;
   z-index: 999;
   background: url("../fancybox/fancy_close.png") no-repeat;
+  cursor: pointer;
   overflow: hidden; }
 
 .hold1 {
   background: #fff none repeat scroll 0 0;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  left: 50%;
-  max-width: 800px;
-  padding: 20px 9px;
+  left: -9999px;
+  max-width: 710px;
+  padding: 20px 10px;
   position: fixed;
-  top: 50%;
+  top: -9999px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 90vw;
   z-index: 998;
-  display: none; }
+  opacity: 0;
+  transition: opacity 0.5s ease; }
+  .hold1 .head {
+    text-align: center;
+    margin-bottom: 35px;
+    letter-spacing: 3px; }
+    .hold1 .head h3 {
+      margin-bottom: 20px;
+      font-size: 36px;
+      line-height: 1.2;
+      font-weight: normal;
+      color: #003a9e; }
+    .hold1 .head p {
+      font-size: 28px;
+      line-height: 1.2; }
+    @media only screen and (max-width: 800px) {
+      .hold1 .head {
+        margin-bottom: 15px;
+        letter-spacing: 1px; }
+        .hold1 .head h3 {
+          font-size: 18px;
+          margin-bottom: 10px; }
+        .hold1 .head p {
+          font-size: 14px; } }
 
 .hold1.opn {
-  display: block; }
+  left: 50%;
+  top: 50%;
+  opacity: 1; }
+
+.product-list li .hold1 img {
+  margin-bottom: 0;
+  vertical-align: top;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
 
 .owl-thumb-item {
   display: inline-block;
   vertical-align: top;
-  margin: 0 10px;
-  width: 100px !important;
-  height: auto !important; }
+  margin: 0 15px;
+  border: 1px solid #bcbcbc;
+  width: 146px !important;
+  height: auto !important;
+  cursor: pointer; }
+  .owl-thumb-item img {
+    border: 0 !important; }
   @media only screen and (max-width: 800px) {
     .owl-thumb-item {
       margin: 0 5px;
       width: 90px !important; } }
+  .owl-thumb-item.active {
+    border-color: #003a9e;
+    box-shadow: 1px 1px #003a9e, -1px 1px #003a9e, 1px -1px #003a9e, -1px -1px #003a9e; }
 
 .owl-thumbs {
-  padding: 10px 0;
+  padding: 30px 0 10px;
   text-align: center; }
+  @media only screen and (max-width: 800px) {
+    .owl-thumbs {
+      padding: 20px 0 0; } }
 
 .hold1 .owl-nav .owl-next {
   position: absolute;

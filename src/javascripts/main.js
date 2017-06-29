@@ -29,6 +29,7 @@ function initPage(){
 	mobileMenu();
 	initSameHeight();
 	optionGallery();
+	checkAvailable();
 
 	$("#fancy-image1").fancybox();
 	$("#fancy-image2").fancybox();
@@ -55,54 +56,78 @@ function initPage(){
 }
 
 
+function checkAvailable() {
+	if ($('.radio-list').length > 0) {
+		/*$('.txt-available').change(function() {
+			if ($(this).prop('checked')==false) {
+				$(this).parent().find($('.input-text input')).prop('disabled', false);
+				alert('1');
+			} else {
+				alert('2');
+			};
+		});*/
+		$("input[type='radio'").click(function(){
+			if ($(this).hasClass('txt-available')) {
+				$(this).parent().parent().find($('.input-text input')).prop('disabled', false);
+			} else {
+				$(this).parent().parent().find($('.input-text input')).prop('disabled', true);
+			}
+		});
+	}
+}
+
+
 function optionGallery() {
-	$('.owlth').owlCarousel({
-		margin: 0,
-		loop: false,
-		items: 1,
-		nav: true,
-		dots: false,
-		thumbs: true,
-		thumbsPrerendered: true
-	});
+	if ($(".owlth").length > 0) {
 
-	$(".mypop").click(function(a) {
-		a.preventDefault();
-		$('.mypop').removeClass('opn');
-		$('.hold1').removeClass('opn');
-	});
+		$('.owlth').owlCarousel({
+			margin: 0,
+			loop: false,
+			items: 1,
+			nav: true,
+			dots: false,
+			thumbs: true,
+			thumbsPrerendered: true
+		});
 
-	$(".showpopup li a").click(function(a) {
-		a.preventDefault();
-		$('.mypop').addClass('opn');
-		$('.hold1').removeClass('opn');
-		$(this).parent().find('.hold1').addClass('opn');
-	});
+		$(".mypop").click(function (a) {
+			a.preventDefault();
+			$('.mypop').removeClass('opn');
+			$('.hold1').removeClass('opn');
+		});
 
-	$("div.close").click(function(a) {
-		a.preventDefault();
-		$('.mypop').removeClass('opn');
-		$('.hold1').removeClass('opn');
-	});
+		$(".showpopup li a").click(function (a) {
+			a.preventDefault();
+			$('.mypop').addClass('opn');
+			$('.hold1').removeClass('opn');
+			$(this).parent().find('.hold1').addClass('opn');
+		});
 
-	$(".fancy").fancybox({
+		$("div.close").click(function (a) {
+			a.preventDefault();
+			$('.mypop').removeClass('opn');
+			$('.hold1').removeClass('opn');
+		});
 
-		toolbar  : true,
-		buttons : [
-			'close'
-		],
-		arrows : false,
-		smallBtn : true,
-		iframe : {
-			preload : false
-		}
-	});
+		$(".fancy").fancybox({
 
-	$("[data-fancybox]").fancybox({
-		thumbs : {
-			autoStart : true
-		}
-	});
+			toolbar: true,
+			buttons: [
+				'close'
+			],
+			arrows: false,
+			smallBtn: true,
+			iframe: {
+				preload: false
+			}
+		});
+
+		$("[data-fancybox]").fancybox({
+			thumbs: {
+				autoStart: true
+			}
+		});
+	}
 }
 
 
