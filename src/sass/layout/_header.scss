@@ -94,7 +94,7 @@
 							position: static;
 						}
 						> a,
-						> div:first-child{
+						> div.slide-opener{
 							display: block;
 							position: relative;
 							font-size: 15px;
@@ -124,7 +124,7 @@
 							}
 						}
 						&.active a,
-						&.active div:first-child{
+						&.active div.slide-opener{
 							color: $hover-color;
 						}
 						.drop{
@@ -341,7 +341,8 @@
 							display: block;
 							border: 1px solid #3d64a7;
 							border-width: 0 0 1px !important;
-							a{
+							a,
+							div.slide-opener{
 								display: block;
 								font-size: 15px;
 								line-height: 19px;
@@ -378,7 +379,8 @@
 							}
 							&.hasdrop{
 								position: relative;
-								a{
+								a,
+								div.slide-opener{
 									&:after{
 										display: none;
 									}

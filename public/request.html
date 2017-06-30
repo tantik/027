@@ -117,7 +117,7 @@
 				<div class="holder">
 					<form action="#">
 						<fieldset>
-							<div class="info-box">
+							<div class="info-box top">
 								<div class="head">
 									<p class="req">必須</p>
 									<h3>メイングローブボックス</h3>
@@ -199,48 +199,108 @@
 									</div>
 								</div>
 							</div>
-
-
-
-
-
-
-
-
-
-						</fieldset>
-					</form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-					<div id="registration-form" class="info-box box1">
-						<h3>ユーザー登録フォーム</h3>
-						<div class="form-text">
-							<p>必要事項をご記入の上、「送信する」ボタンをクリックしてください。 <br />
-								ご登録いただいた内容は、お客様への情報提供のためにのみ利用し、 それ以外の目的での利用はいたしません。また、無断で第三者に情報を提供することはございません。 <br />
-								※(株)などの省略記号(機種依存文字)を使用せずにご記入ください。
-							</p>
-						</div>
-						<div class="contact-form">
-							<form action="#">
-								<fieldset>
-									<table class="form-table catalog-form">
+							<div class="info-box">
+								<div class="head">
+									<h3>ガス循環精製装置</h3>
+								</div>
+								<ul class="radio-items-list">
+									<li>
+										<div class="hold">
+											<input id="radio13" type="radio" name="name3" />
+											<label for="radio13"><span><em>有り</em>（酸素値・水分値の保証値は1ppm（-76℃））</span></label>
+										</div>
+									</li>
+									<li>
+										<div class="hold">
+											<input id="radio14" type="radio" name="name3" />
+											<label for="radio14"><span>無し</span></label>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="info-box">
+								<div class="head">
+									<h3>追加機能</h3>
+								</div>
+								<ul class="checkbox-items-list">
+									<li>
+										<div class="hold">
+											<input id="checkbox1" type="checkbox" />
+											<label for="checkbox1"><span>水分計</span></label>
+										</div>
+									</li>
+									<li>
+										<div class="hold">
+											<input id="checkbox2" type="checkbox" />
+											<label for="checkbox2"><span>酸素計</span></label>
+										</div>
+									</li>
+									<li>
+										<div class="hold">
+											<input id="checkbox3" type="checkbox" />
+											<label for="checkbox3"><span>内部棚</span></label>
+										</div>
+									</li>
+									<li>
+										<div class="hold">
+											<input id="checkbox4" type="checkbox" />
+											<label for="checkbox4"><span>予備フランジ</span></label>
+										</div>
+									</li>
+									<li>
+										<div class="hold">
+											<input id="checkbox5" type="checkbox" />
+											<label for="checkbox5"><span>貫通配管</span></label>
+										</div>
+									</li>
+									<li>
+										<div class="hold">
+											<input id="checkbox6" type="checkbox" />
+											<label for="checkbox6"><span>（小）サイド追加</span></label>
+										</div>
+									</li>
+									<li>
+										<div class="hold">
+											<input id="checkbox7" type="checkbox" />
+											<label for="checkbox7"><span>サイド全体加熱</span></label>
+										</div>
+									</li>
+									<li>
+										<div class="hold">
+											<input id="checkbox8" type="checkbox" />
+											<label for="checkbox8"><span>冷凍庫</span></label>
+										</div>
+									</li>
+									<li>
+										<div class="hold">
+											<input id="checkbox9" type="checkbox" />
+											<label for="checkbox9"><span>電流導入端子</span></label>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="info-box">
+								<div class="head">
+									<h3>その他ご要望</h3>
+								</div>
+								<textarea class="wide" placeholder=""></textarea>
+							</div>
+							<div class="info-box">
+								<div class="head">
+									<h3>お客様情報</h3>
+								</div>
+								<div class="contact-form">
+									<table class="form-table">
 										<tr>
 											<th>御社名 <p class="req">必須</p></th>
-											<td><input class="input-text" type="text" placeholder="株式会社美和製作所" /></td>
+											<td><input class="input-text" type="text" placeholder="株式会社美和製作所" required /></td>
 										</tr>
 										<tr>
-											<th>住所 <p class="req">必須</p></th>
+											<th>お名前 <p class="req">必須</p></th>
+											<td><input class="input-text" type="text" placeholder="山田 太郎" required /></td>
+										</tr>
+										<tr>
+											<th>所在地 <p class="req">必須</p></th>
 											<td>
 												<select>
 													<option>都道府県</option>
@@ -295,29 +355,22 @@
 											</td>
 										</tr>
 										<tr>
-											<th>所属部署</th>
-											<td><input class="input-text short" type="text" placeholder="業務課" /></td>
+											<th>電話番号 <p class="req">必須</p></th>
+											<td><input class="input-text short" type="text" placeholder="072-625-1138" required /></td>
 										</tr>
-										<tr>
-											<th>お名前 <p class="req">必須</p></th>
-											<td><input class="input-text" type="text" placeholder="山田 太郎" /></td>
-										</tr>
+
 										<tr>
 											<th>メールアドレス <p class="req">必須</p></th>
-											<td><input class="input-text" type="email" placeholder="info@example.com" /></td>
-										</tr>
-										<tr>
-											<th>ご要望など</th>
-											<td><textarea placeholder=""></textarea></td>
+											<td><input class="input-text" type="email" placeholder="info@example.com" required /></td>
 										</tr>
 									</table>
 									<div class="button-holder">
 										<input class="btn" type="submit" value="送信する" />
 									</div>
-								</fieldset>
-							</form>
-						</div>
-					</div>
+								</div>
+							</div>
+						</fieldset>
+					</form>
 				</div>
 			</div>
 			<!-- request content end -->
