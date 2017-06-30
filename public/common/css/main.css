@@ -4153,6 +4153,286 @@ input[type="checkbox"] {
         .checkbox-items-list li .hold {
           padding: 10px; } }
 
+/* comparison block */
+.comparison-block {
+  margin-bottom: 150px; }
+  .comparison-block h2.title-blue {
+    margin-bottom: 20px; }
+  .comparison-block .comparison-table {
+    margin-bottom: 50px; }
+    .comparison-block .comparison-table table.fixheader {
+      display: none;
+      position: fixed;
+      top: 0; }
+      .comparison-block .comparison-table table.fixheader tr th:first-child {
+        border-bottom-color: #ccc !important; }
+    .comparison-block .comparison-table th {
+      border: 1px solid #ccc;
+      background: #f5f5f5;
+      font-size: 14px;
+      line-height: 30px;
+      font-weight: normal;
+      padding: 15px;
+      text-align: center;
+      vertical-align: middle;
+      width: 41.66%; }
+      .comparison-block .comparison-table th.ttl {
+        width: 16.68%;
+        border-bottom-color: #f5f5f5;
+        font-weight: bold; }
+      .comparison-block .comparison-table th:first-child {
+        border-left-width: 0; }
+      .comparison-block .comparison-table th:last-child {
+        border-right-width: 0; }
+    .comparison-block .comparison-table .sheet {
+      width: 100%; }
+      .comparison-block .comparison-table .sheet tr th:first-child {
+        padding: 15px;
+        vertical-align: top; }
+        .comparison-block .comparison-table .sheet tr th:first-child.mid {
+          line-height: 16px;
+          vertical-align: middle; }
+      .comparison-block .comparison-table .sheet tr td {
+        padding: 15px;
+        border: 1px solid #ccc;
+        width: 41.66%;
+        font-size: 14px;
+        line-height: 30px;
+        text-align: center; }
+        .comparison-block .comparison-table .sheet tr td:last-child {
+          border-right-width: 0; }
+        .comparison-block .comparison-table .sheet tr td .product-image {
+          -display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-box;
+          display: flex;
+          height: 264px;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          .comparison-block .comparison-table .sheet tr td .product-image img {
+            display: block;
+            width: auto !important;
+            height: auto !important;
+            max-width: 100% !important;
+            max-height: 100% !important; }
+        .comparison-block .comparison-table .sheet tr td .characteristic {
+          display: inline-block;
+          vertical-align: middle;
+          margin: -5px 8px;
+          width: 100px; }
+          .comparison-block .comparison-table .sheet tr td .characteristic .hold {
+            -display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 10px;
+            font-size: 15px;
+            line-height: 20px;
+            font-weight: bold;
+            color: #fff;
+            background: #003a9e;
+            text-align: center; }
+            .comparison-block .comparison-table .sheet tr td .characteristic .hold p span {
+              display: block; }
+        .comparison-block .comparison-table .sheet tr td.mid {
+          line-height: 16px;
+          vertical-align: middle; }
+      .comparison-block .comparison-table .sheet tr.mark th {
+        background: #e2e9f6; }
+      .comparison-block .comparison-table .sheet tr.mark td {
+        background: #f5f7fa; }
+      .comparison-block .comparison-table .sheet tbody tr th:first-child {
+        border-bottom-color: #ccc !important; }
+      .comparison-block .comparison-table .sheet .links-holder {
+        width: 100%;
+        -display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        text-align: left; }
+        .comparison-block .comparison-table .sheet .links-holder .links {
+          width: 35%;
+          padding: 0 0 0 25px;
+          -ms-box-sizing: border-box;
+          box-sizing: border-box; }
+          .comparison-block .comparison-table .sheet .links-holder .links:nth-child(2) {
+            width: 37%; }
+          .comparison-block .comparison-table .sheet .links-holder .links:nth-child(3) {
+            width: 28%; }
+          .comparison-block .comparison-table .sheet .links-holder .links li a {
+            color: #003a9e;
+            text-decoration: underline; }
+  .comparison-block .button-holder {
+    text-align: center; }
+    .comparison-block .button-holder .btn {
+      min-width: 312px; }
+  @media only screen and (max-width: 800px) {
+    .comparison-block {
+      margin-bottom: 75px; }
+      .comparison-block .pc-only {
+        display: none !important; }
+      .comparison-block h2.title-blue {
+        margin-bottom: 15px; }
+      .comparison-block .comparison-table {
+        margin-bottom: 26px; }
+        .comparison-block .comparison-table table.fixheader {
+          top: 50px; }
+          .comparison-block .comparison-table table.fixheader tr {
+            -display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            width: 100%; }
+            .comparison-block .comparison-table table.fixheader tr th {
+              display: block;
+              width: 50%;
+              -ms-box-sizing: border-box;
+              box-sizing: border-box;
+              border-left-width: 0;
+              font-size: 14px;
+              line-height: 15px;
+              padding: 14px; }
+        .comparison-block .comparison-table table.sheet thead {
+          display: block;
+          width: 100%;
+          margin-bottom: -1px; }
+          .comparison-block .comparison-table table.sheet thead tr {
+            -display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            width: 100%; }
+            .comparison-block .comparison-table table.sheet thead tr th {
+              display: block;
+              width: 50%;
+              -ms-box-sizing: border-box;
+              box-sizing: border-box;
+              border-left-width: 0;
+              font-size: 14px;
+              line-height: 15px;
+              padding: 14px;
+              border-bottom-width: 0; }
+        .comparison-block .comparison-table table.sheet tbody {
+          display: block;
+          width: 100%; }
+          .comparison-block .comparison-table table.sheet tbody tr {
+            -display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            width: 100%; }
+            .comparison-block .comparison-table table.sheet tbody tr th {
+              display: block;
+              width: 100%;
+              -ms-box-sizing: border-box;
+              box-sizing: border-box;
+              margin-top: -1px;
+              margin-bottom: -1px;
+              font-size: 14px;
+              line-height: 15px;
+              padding: 14px;
+              border-right-width: 0;
+              border-bottom-width: 0; }
+              .comparison-block .comparison-table table.sheet tbody tr th span {
+                font-weight: normal; }
+            .comparison-block .comparison-table table.sheet tbody tr td {
+              display: block;
+              width: 50%;
+              -ms-box-sizing: border-box;
+              box-sizing: border-box;
+              border-left-width: 0;
+              border-top-width: 0;
+              line-height: 15px; }
+              .comparison-block .comparison-table table.sheet tbody tr td:nth-child(2) {
+                padding-left: 0; }
+                .comparison-block .comparison-table table.sheet tbody tr td:nth-child(2) .product-image {
+                  height: 144px;
+                  padding: 0 15px 0 30px; }
+              .comparison-block .comparison-table table.sheet tbody tr td:nth-child(3) {
+                padding-right: 0; }
+                .comparison-block .comparison-table table.sheet tbody tr td:nth-child(3) .product-image {
+                  height: 144px;
+                  padding: 0 30px 0 15px; }
+              .comparison-block .comparison-table table.sheet tbody tr td .characteristic {
+                display: block;
+                margin: 0 0 10px;
+                width: 100%;
+                -ms-box-sizing: border-box;
+                box-sizing: border-box; }
+                .comparison-block .comparison-table table.sheet tbody tr td .characteristic .hold {
+                  height: auto;
+                  padding: 8px 5px;
+                  margin: 0;
+                  width: 100%;
+                  font-size: 15px;
+                  line-height: 24px;
+                  -ms-box-sizing: border-box;
+                  box-sizing: border-box;
+                  border-radius: 5px; }
+                .comparison-block .comparison-table table.sheet tbody tr td .characteristic:last-child {
+                  margin: 0; }
+              .comparison-block .comparison-table table.sheet tbody tr td.txt:nth-child(2), .comparison-block .comparison-table table.sheet tbody tr td.txt:nth-child(3) {
+                padding-left: 10px;
+                padding-right: 10px; }
+              .comparison-block .comparison-table table.sheet tbody tr td.last-links {
+                width: 100%; }
+        .comparison-block .comparison-table table.sheet .links-holder {
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          .comparison-block .comparison-table table.sheet .links-holder .links {
+            width: 100%;
+            padding: 0;
+            text-align: center;
+            font-size: 14px;
+            line-height: 30px; }
+            .comparison-block .comparison-table table.sheet .links-holder .links:nth-child(2) {
+              width: 100%; }
+            .comparison-block .comparison-table table.sheet .links-holder .links:nth-child(3) {
+              width: 100%; }
+      .comparison-block .button-holder {
+        height: 40px; }
+        .comparison-block .button-holder .btn {
+          min-width: 230px; }
+        .comparison-block .button-holder.fixed .hold {
+          position: fixed;
+          z-index: 890;
+          top: 50%;
+          left: 0;
+          right: 0;
+          padding: 25px 0;
+          background: rgba(255, 255, 255, 0.7); } }
+
 /* popups */
 #fancybox-overlay {
   background: black !important; }
@@ -4302,3 +4582,47 @@ input[type="checkbox"] {
   @media only screen and (max-width: 800px) {
     .hold1 .owl-nav .owl-prev {
       left: -10px; } }
+
+/* tooltip */
+#tooltip {
+  text-align: center;
+  color: #fff;
+  background: #003a9e;
+  position: absolute;
+  z-index: 100;
+  font-size: 12px;
+  line-height: 30px;
+  padding: 2px 10px;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 3px;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+/* triangle decoration */
+#tooltip:after {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #003a9e;
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -10px;
+  margin-left: -10px; }
+
+#tooltip.top:after {
+  border-bottom-color: transparent;
+  border-top: 10px solid #003a9e;
+  top: -20px;
+  bottom: auto; }
+
+#tooltip.left:after {
+  left: 10px;
+  margin: 0; }
+
+#tooltip.right:after {
+  right: 10px;
+  left: auto;
+  margin: 0; }
