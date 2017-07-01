@@ -60,6 +60,10 @@ function initPage(){
 
 function tooltips() {
 	if ($('.tooltip-links').length > 0) {
+		$('.tooltip-links li a').click( function(e){
+			e.preventDefault();
+		});
+
 		var targets = $( '[rel~=tooltip]' ),
 			target  = false,
 			tooltip = false,
@@ -241,12 +245,20 @@ function comparisonHeading() {
 
 
 function checkAvailable() {
-	if ($('.radio-list').length > 0) {
-		$("input[type='radio'").click(function(){
-			if ($(this).hasClass('txt-available')) {
-				$(this).parent().parent().find($('.input-text input')).prop('disabled', false);
+	if ($('.two-radio-boxes').length > 0) {
+		$("#it1, #it2").prop('disabled', true);
+		$(".two-radio-boxes .box:first-child .wpcf7-list-item input[type='radio']").click(function(){
+			if ($(this).parent().hasClass('last')) {
+				$("#it1").prop('disabled', false);
 			} else {
-				$(this).parent().parent().find($('.input-text input')).prop('disabled', true);
+				$("#it1").prop('disabled', true);
+			}
+		});
+		$(".two-radio-boxes .box:last-child .wpcf7-list-item input[type='radio']").click(function(){
+			if ($(this).parent().hasClass('last')) {
+				$("#it2").prop('disabled', false);
+			} else {
+				$("#it2").prop('disabled', true);
 			}
 		});
 	}
