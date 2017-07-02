@@ -4315,7 +4315,8 @@ input[type="checkbox"]{
 				.hold{
 					position: fixed;
 					z-index: 890;
-					top: 50%;
+					top: auto;
+					bottom: 0;
 					left: 0;
 					right: 0;
 					padding: 25px 0;
