@@ -1822,6 +1822,9 @@ textarea.wide{
 					text-decoration: none !important;
 				}
 			}
+			&.wide{
+				width: 48.9%;
+			}
 		}
 		.left-image{
 			float: left;
@@ -2013,7 +2016,7 @@ textarea.wide{
 					display: none;
 				}
 				&.img2{
-					padding-top: 17px;
+					padding-top: 5px;
 					margin-bottom: 10px;
 					width: 100%;
 					float: none;

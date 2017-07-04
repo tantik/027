@@ -660,3 +660,40 @@
 		}
 	}
 }
+/* active nav states */
+.post-type-archive-projects #header .holder .nav-holder .nav > ul > li.pr > a,
+.post-type-archive-projects #header .holder .nav-holder .nav > ul > li.pr > .slide-opener,
+.single-projects #header .holder .nav-holder .nav > ul > li.pr > a,
+.single-projects #header .holder .nav-holder .nav > ul > li.pr > .slide-opener,
+.single-products #header .holder .nav-holder .nav > ul > li.full > a,
+.single-products #header .holder .nav-holder .nav > ul > li.full > .slide-opener,
+.page-template-company-information #header .holder .nav-holder .nav > ul > li.co > a,
+.page-template-company-information #header .holder .nav-holder .nav > ul > li.co > .slide-opener,
+.page-template-company-patent #header .holder .nav-holder .nav > ul > li.co > a,
+.page-template-company-patent #header .holder .nav-holder .nav > ul > li.co > .slide-opener,
+.page-template-recruitment-information #header .holder .nav-holder .nav > ul > li.re > a,
+.page-template-recruitment-information #header .holder .nav-holder .nav > ul > li.re > .slide-opener,
+.page-template-basic-stance  #header .holder .nav-holder .nav > ul > li.ro > a,
+.page-template-basic-stance  #header .holder .nav-holder .nav > ul > li.ro > .slide-opener,
+.page-template-manuf-miwa  #header .holder .nav-holder .nav > ul > li.ro > a,
+.page-template-manuf-miwa  #header .holder .nav-holder .nav > ul > li.ro > .slide-opener{
+	color: $blue;
+}
+.post-type-archive-projects #header .holder .nav-holder .nav > ul > li.pr > a:after,
+.post-type-archive-projects #header .holder .nav-holder .nav > ul > li.pr > .slide-opener:after,
+.single-projects #header .holder .nav-holder .nav > ul > li.pr > a:after,
+.single-projects #header .holder .nav-holder .nav > ul > li.pr > .slide-opener:after,
+.single-products #header .holder .nav-holder .nav > ul > li.full > a:after,
+.single-products #header .holder .nav-holder .nav > ul > li.full > .slide-opener:after,
+.page-template-company-information #header .holder .nav-holder .nav > ul > li.co > a:after,
+.page-template-company-information #header .holder .nav-holder .nav > ul > li.co > .slide-opener:after,
+.page-template-company-patent #header .holder .nav-holder .nav > ul > li.co > a:after,
+.page-template-company-patent #header .holder .nav-holder .nav > ul > li.co > .slide-opener:after,
+.page-template-recruitment-information #header .holder .nav-holder .nav > ul > li.re > a:after,
+.page-template-recruitment-information #header .holder .nav-holder .nav > ul > li.re > .slide-opener:after,
+.page-template-basic-stance  #header .holder .nav-holder .nav > ul > li.ro > a:after,
+.page-template-basic-stance  #header .holder .nav-holder .nav > ul > li.ro > .slide-opener:after,
+.page-template-manuf-miwa  #header .holder .nav-holder .nav > ul > li.ro > a:after,
+.page-template-manuf-miwa  #header .holder .nav-holder .nav > ul > li.ro > .slide-opener:after {
+	opacity: 1;
+}
