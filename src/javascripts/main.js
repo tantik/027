@@ -41,6 +41,7 @@ function initPage(){
 	$("#fancy-image2-img").fancybox();
 	$("#fancy-image3-img").fancybox();
 	$("#fancy-image4-img").fancybox();
+	$(".fancy-image").fancybox();
 	
 	if (window.innerWidth <= 800) {
 		$('.nav ul').slideBlock({
