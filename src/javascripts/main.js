@@ -22,12 +22,11 @@ $(window).resize(function() {
 $(document).ready(initPage);
 function initPage(){
 	initGallery();
-	initProductList();
+	initSameHeight();
 	scrollTo();
 	initTabs();
 	initScrollController();
 	mobileMenu();
-	initSameHeight();
 	optionGallery();
 	checkAvailable();
 	comparisonHeading();
@@ -56,6 +55,8 @@ function initPage(){
 			slideBlock: 'ul.side-nav'
 		});
 	}
+
+	setTimeout(initProductList, 500);
 }
 
 

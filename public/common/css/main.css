@@ -43,6 +43,14 @@ body {
       min-width: 320px;
       font-size: 14px; } }
 
+@media only screen and (max-width: 1200px) {
+  .tablet body {
+    min-width: 1000px; } }
+
+@media only screen and (max-width: 800px) {
+  .tablet body {
+    min-width: 320px; } }
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
@@ -413,7 +421,7 @@ input, select {
               display: block;
               font-size: 15px;
               line-height: 19px;
-              color: #fff;
+              color: #fff !important;
               padding: 20px 45px 20px 20px;
               position: relative;
               text-align: left;
@@ -670,6 +678,8 @@ input, select {
           line-height: 18px; } }
 
 /* active nav states */
+.page-template-category-option #header .holder .nav-holder .nav > ul > li.full > a,
+.page-template-category-option #header .holder .nav-holder .nav > ul > li.full > .slide-opener,
 .post-type-archive-projects #header .holder .nav-holder .nav > ul > li.pr > a,
 .post-type-archive-projects #header .holder .nav-holder .nav > ul > li.pr > .slide-opener,
 .single-projects #header .holder .nav-holder .nav > ul > li.pr > a,
@@ -688,6 +698,8 @@ input, select {
 .page-template-manuf-miwa #header .holder .nav-holder .nav > ul > li.ro > .slide-opener {
   color: #003a9e; }
 
+.page-template-category-option #header .holder .nav-holder .nav > ul > li.full > a:after,
+.page-template-category-option #header .holder .nav-holder .nav > ul > li.full > .slide-opener:after,
 .post-type-archive-projects #header .holder .nav-holder .nav > ul > li.pr > a:after,
 .post-type-archive-projects #header .holder .nav-holder .nav > ul > li.pr > .slide-opener:after,
 .single-projects #header .holder .nav-holder .nav > ul > li.pr > a:after,
@@ -1304,13 +1316,15 @@ input, select {
             .project-block .content .holder .text .buttons-holder .btn {
               margin: 0 auto 10px; } }
 
-.btn {
+.btn,
+.view-full-post-btn {
   display: inline-block;
   vertical-align: top;
   width: 253px;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   border: 1px solid #003a9e;
+  text-decoration: none !important;
   text-align: center;
   line-height: 51px;
   color: #003a9e;
@@ -1318,7 +1332,8 @@ input, select {
   background: #fff;
   position: relative;
   transition: all 0.5s ease; }
-  .btn:after {
+  .btn:after,
+  .view-full-post-btn:after {
     content: '';
     position: absolute;
     top: 50%;
@@ -1330,25 +1345,32 @@ input, select {
     border-left: 5px solid #003a9e;
     border-bottom: 4px solid transparent;
     transition: all 0.5s ease; }
-  .btn:hover {
+  .btn:hover,
+  .view-full-post-btn:hover {
     text-decoration: none !important;
     background: #003a9e;
     color: #fff; }
-    .btn:hover:after {
+    .btn:hover:after,
+    .view-full-post-btn:hover:after {
       border-left: 5px solid #fff; }
-  .btn.white {
+  .btn.white,
+  .view-full-post-btn.white {
     border-color: #fff;
     color: #fff;
     background: none; }
-    .btn.white:after {
+    .btn.white:after,
+    .view-full-post-btn.white:after {
       border-left: 5px solid #fff; }
-    .btn.white:hover {
+    .btn.white:hover,
+    .view-full-post-btn.white:hover {
       border-color: #003a9e;
       color: #003a9e;
       background: #fff; }
-      .btn.white:hover:after {
+      .btn.white:hover:after,
+      .view-full-post-btn.white:hover:after {
         border-left: 5px solid #003a9e; }
-  .btn.download:after {
+  .btn.download:after,
+  .view-full-post-btn.download:after {
     width: 9px;
     height: 11px;
     margin-top: -5px;
@@ -1356,16 +1378,20 @@ input, select {
     border-left: 0;
     border-bottom: 0;
     background: url("../images/icon-download.png") no-repeat; }
-  .btn.download:hover:after {
+  .btn.download:hover:after,
+  .view-full-post-btn.download:hover:after {
     background: url("../images/icon-download-over.png") no-repeat; }
-  .btn.blue {
+  .btn.blue,
+  .view-full-post-btn.blue {
     background: #003a9e;
     color: #fff; }
-    .btn.blue:hover {
+    .btn.blue:hover,
+    .view-full-post-btn.blue:hover {
       background: #fff;
       color: #003a9e; }
   @media only screen and (max-width: 800px) {
-    .btn {
+    .btn,
+    .view-full-post-btn {
       display: block;
       margin: 0 auto;
       width: 230px;
@@ -1382,7 +1408,8 @@ input.btn {
     background: #003a9e url("../images/arrow-btn-on.png") no-repeat 100% 50%; }
 
 .bot-btn-holder {
-  margin-bottom: 80px;
+  margin: 0 auto 80px;
+  max-width: 1000px;
   text-align: center;
   min-width: 48px;
   position: relative;
@@ -1406,7 +1433,7 @@ input.btn {
       border-top: 4px solid transparent;
       border-left: 5px solid #003a9e;
       border-bottom: 4px solid transparent; }
-  .bot-btn-holder .link-txt-prev {
+  .bot-btn-holder .link-txt-next {
     position: absolute;
     top: 50%;
     left: 0;
@@ -1414,7 +1441,7 @@ input.btn {
     font-size: 15px;
     line-height: 20px;
     padding-left: 16px; }
-    .bot-btn-holder .link-txt-prev:after {
+    .bot-btn-holder .link-txt-next:after {
       content: '';
       position: absolute;
       top: 50%;
@@ -1425,7 +1452,7 @@ input.btn {
       border-top: 5px solid transparent;
       border-right: 5px solid #003a9e;
       border-bottom: 5px solid transparent; }
-  .bot-btn-holder .link-txt-next {
+  .bot-btn-holder .link-txt-prev {
     position: absolute;
     top: 50%;
     right: 0;
@@ -1433,7 +1460,7 @@ input.btn {
     font-size: 15px;
     line-height: 20px;
     padding-right: 16px; }
-    .bot-btn-holder .link-txt-next:after {
+    .bot-btn-holder .link-txt-prev:after {
       content: '';
       position: absolute;
       top: 50%;
@@ -1457,18 +1484,18 @@ input.btn {
         padding: 0 3px;
         -ms-box-sizing: border-box;
         box-sizing: border-box; }
-      .bot-btn-holder .link-txt-prev {
+      .bot-btn-holder .link-txt-next {
         font-size: 12px;
         padding-left: 14px; }
-        .bot-btn-holder .link-txt-prev:after {
+        .bot-btn-holder .link-txt-next:after {
           margin-top: -4px;
           border-top: 4px solid transparent;
           border-right: 4px solid #003a9e;
           border-bottom: 4px solid transparent; }
-      .bot-btn-holder .link-txt-next {
+      .bot-btn-holder .link-txt-prev {
         font-size: 12px;
         padding-right: 14px; }
-        .bot-btn-holder .link-txt-next:after {
+        .bot-btn-holder .link-txt-prev:after {
           margin-top: -4px;
           border-top: 4px solid transparent;
           border-left: 4px solid #003a9e;
@@ -2804,7 +2831,11 @@ h3.title_info_box {
     padding-top: 3px; }
     .project-box .info-box p {
       margin-bottom: 21px; }
-    .project-box .info-box .btn {
+      .project-box .info-box p .view-full-post-btn {
+        margin-top: 21px;
+        display: block; }
+    .project-box .info-box .btn,
+    .project-box .info-box .view-full-post-btn {
       line-height: 44px;
       width: 245px; }
   .project-box .content {
@@ -2844,7 +2875,11 @@ h3.title_info_box {
         margin-bottom: 12px; }
       .project-box .info-box p {
         margin-bottom: 17px; }
-      .project-box .info-box .btn {
+        .project-box .info-box p .view-full-post-btn {
+          margin-top: 17px;
+          display: block; }
+      .project-box .info-box .btn,
+      .project-box .info-box .view-full-post-btn {
         font-size: 14px;
         line-height: 38px;
         width: 230px; }
@@ -3858,6 +3893,8 @@ h2.title-blue {
     padding-left: 30px;
     background: #f5f5f5;
     font-weight: bold; }
+    .table table tr th:first-child {
+      min-width: 131px; }
 
 .lineup-table table {
   border-collapse: collapse;
